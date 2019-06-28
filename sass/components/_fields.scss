@@ -1,0 +1,72 @@
+.field--name-field-gallery {
+
+
+}
+.field--name-user-picture {
+  display:inline-block;
+  float:left;
+  margin-right:10px;
+  img {
+    width:28px;
+    display:inline-block;
+    border-radius:50%;
+    overflow:hidden;
+  }
+}
+
+.field--label-above {
+  .field__label {
+    margin:1em 0;
+  }
+}
+.field--name-field-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); 
+    grid-gap: 15px;
+  .field__items {
+
+
+  }
+}
+
+.field--label-inline {
+  font-size:.875em;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 15px;
+  .field__label {
+    text-align:right;
+    font-weight:600;
+    padding:5px 0;
+  
+  }
+  .field__items {grid-column:span 5;}
+  .field__item {
+    margin-bottom:5px;
+    &:not(:last-of-type) {
+      
+    }
+    border-bottom:1px solid $gris_80;
+    
+    padding:5px 0;
+  }
+
+  padding:5px 0;
+  
+  margin:5px 0;
+  &:not(:last-of-type) {
+    // border-bottom:1px solid $gris_80;
+  }
+  &:last-of-type {
+    // margin-bottom:1.5em;
+    // background:red;
+  }
+}
+
+.field--name-field-attachment {
+  a {
+    text-decoration:none;
+    color:$general;
+    // font-weight:600;
+  }
+}

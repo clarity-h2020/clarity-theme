@@ -1,0 +1,68 @@
+
+
+
+@media(min-width:$device) {
+    .menu--account {
+        .menu {
+            justify-content: flex-end;
+        }
+        
+    }
+}
+
+
+
+
+
+
+ #user-menu-header {
+    .field-picture {
+        width:32px;
+        height:32px;
+        border-radius:50%;
+        overflow:hidden;
+        
+        img {
+            display:block;
+        }
+        margin-top:-7px;
+    }
+    .user-name {
+        display:flex;
+
+    }
+    .field-name {
+        margin-right:10px;
+    }
+    li {
+        padding:20px;
+        
+    }
+ }
+
+
+@media(min-width:$device) {
+    #user-menu-header {
+        @include reset-list();
+        // position:absolute;
+        // top:0;
+        // right:200px;
+        display:flex;
+        text-transform:uppercase;
+        margin-top:1.5em;
+        li {
+            padding:10px;
+        }
+        
+        
+
+        
+        a {
+            color:$general;
+            
+        }
+    }
+
+    
+
+}

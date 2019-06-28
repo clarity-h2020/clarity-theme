@@ -1,0 +1,137 @@
+#block-views-block-partners-block-1-2,
+#block-views-block-partners-block-1 {
+    position:relative;
+    // padding-top:0;
+    // padding-bottom:0;
+    .maps-content {
+        position:relative;
+    }
+
+//     Slovenia XLAB
+// Germany USTUTT, ADPT
+// Spain ATOS
+// Italy POLIMI
+// Israel IBM
+// Greece CERTH
+// Netherlands UVT
+// United Kingdom CRAY
+    // 992 /704 
+    .attachment {
+
+        svg {
+            width:$device_7;
+            margin:0 auto;
+            display:block;
+        }
+    }
+    .node-country {
+        position:absolute;
+        top:115px;
+        left:103px;
+        width: 30px;
+        height: 30px;
+        overflow:hidden;
+    }
+    // slab solvenia
+    .node-nid-94 {
+        top:355px;
+        top: 40%;
+        left:440px;
+        left: 46%;
+
+    }
+    // greece
+    .node-nid-101 {
+        top:525px;
+        top:70%;
+        left:590px;
+        left:58%;
+
+    }
+// Germany USTUTT, ADPT
+    .node-nid-95 {
+        top:210px;
+        top:20%;
+        left:410px;
+
+    }
+    // Germany ADPT
+    .node-nid-98 {
+        top:22%;
+        
+        left:380px;
+
+    }
+    
+    //atos spain
+    .node-nid-96 {
+        top:60%;
+        left:22%;
+
+    }
+    // italy
+    .node-nid-97 {
+        top:53%;
+        left:43%;
+
+    }
+    // uk
+    .node-nid-99 {
+        top:20%;
+        left:25%;
+
+    }
+    // israel ibm
+    .node-nid-100 {
+        top:86%;
+        left:76%;
+     
+
+    }
+    .node-nid-103 {
+        top:180px;
+        left:310px;
+        top:18%;
+        left:34%;
+
+    }
+        .punto {
+        width: 20px;
+        height: 20px;
+        display: block;
+        background: rgba(0, 128, 0, 0.3);
+        border: 1px solid #666666;
+        border-radius: 10px;
+        cursor: pointer;
+        position: absolute;
+        top: 5px;
+        left: 5px;
+    }
+    .node-country {
+        img {
+            width:24px;
+            margin-right:15px;
+        }
+        .item-list {
+            // opacity: 0;
+            // transition: translate 0.1s;
+            // transition: opacity 0.4s,translate 0.6s;
+            // transform: translate(900px, 0px);
+            margin-left: 35px;
+            padding:5px;
+        }
+        &:hover {
+            z-index: 2;
+            width: auto;
+            height: auto;
+            box-shadow: 2px 2px 8px #999999;
+            background: rgba(255, 255, 255, 0.7);
+        .item-list {
+
+            .opacity: 1;
+    transform: translate(0px, 0px);
+        }
+    
+        }
+    }
+}

@@ -1,0 +1,214 @@
+.region-footer {
+  padding:3em 20px;
+  margin-bottom:1.5em;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); 
+  grid-gap: 20px;
+  & > * {
+    // background:white;
+  }
+
+}
+
+#footer-about {
+  margin:1em auto;
+  max-width:$device_7;
+  text-align:center;
+  position:relative;
+  padding-top:20px;
+  &:before {
+    content:"";
+    position:absolute;
+    top:-30px;
+    left:50%;
+    transform: translate(-100%);
+    transform: translateX(-50%);
+
+    width:60px;
+    height:50px;
+    background:url(../images/Flag_of_Europe.svg) no-repeat;
+    background-size:contain;
+  }
+}
+
+#user-menu {
+  // background:$gris_90;
+  .linkedin,
+  .twitter  {
+      &:before {
+        content:"\ea96";
+
+      }
+
+  }
+  .linkedin:before {
+    content:"\eac9";
+  }
+  
+  @media(min-width:$device) {
+    // position:absolute;
+    // top:0;
+    // right:30px;
+    // font-size:.875em;
+    // color:$bk_1;
+    // background:red;
+  }
+  
+  
+
+  h2 {
+    display:none;
+  }
+  .region {
+    display:flex;
+  }
+  .view-user-info {
+    
+    .user-name,
+    .item-list {
+      ul {
+        @include reset-list();
+        display:flex;
+        &:before {
+          content:"[";
+        }
+        &:after {
+          content:"]";
+        }
+        li {
+          
+          &:not(:last-of-type) {
+            padding-right:5px;
+          }
+        }
+        
+      }
+      
+    }
+    .user-name a {
+      text-decoration:none;
+      &:before {
+        content:"\e971";
+      }
+      
+    }
+    .views-row {
+      display:flex;
+      & > * {
+        // margin-right:1em;
+        // background:$gris_95;
+        padding:5px;
+      }
+    }
+  }
+  .menu {
+    @include reset-list();
+    display:flex;
+    a {
+    padding:3px 12px;}
+    li a {
+      display:blocK;
+      
+    
+  
+      // color:$general;
+      // background:$gris_95;
+    }
+    .language  {
+      @include menu-icon();
+        &:before {
+          background:url(../images/flags/es.png);
+          background-size:cover;
+          border-radius:50%;
+          width:16px;
+          height:16px;
+          
+          background-position:center;
+        }
+  
+      }  
+  }
+  
+  
+  .contextual {
+    right:-30px;
+  }
+  
+  .help {
+    @include replace-text-image();
+    margin-left:.5em;
+    width:24px;
+    height:24px;
+    &::before {
+      
+      background-image:url(../images/icons/help2.svg);
+      width:21px;
+      height:21px;
+      top:3px;
+    }
+    
+  }
+  
+}
+
+#block-reboot-account-menu {
+  // position:absolute;
+  // top:0;
+  // right:0;
+}
+/*
+#block-views-block-user-info-block-1 {
+  // background:red;
+  
+  // color:$claro;
+  a { color:$claro;text-decoration:none;}
+  h2 {
+    display:none;
+  }
+  // position:absolute;
+  // top:0;
+  // right:20px;
+  // display:none;
+  .views-row {
+    display:flex;
+    & > * {
+      padding:5px 10px;
+    }
+  }
+  .contextual {
+    right:-20px;
+  }
+}
+*/
+
+
+#btn-help-2 {
+  width:2em;
+  height:2em;
+  background:cyan;
+  display:block;
+  background-image:url(../images/icons/help2.svg);
+  background-size:cover;
+}
+
+#edit-userid {
+  width:9em;
+}
+
+
+.block-devel-switch-user{
+  .links {
+    @include reset-list();
+    a {
+      text-decoration:none;
+      display:block;
+      padding:2px 0;
+      
+    }
+    li:not(:last-of-type){
+      border-bottom:1px solid $gris_80;
+    
+    }
+    padding-bottom:2em;
+  }
+}

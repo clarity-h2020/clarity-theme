@@ -1,0 +1,117 @@
+<?php
+use Drupal\Core\Template\Attribute;
+
+function clarity_preprocess_html(&$variables) {
+  $variables['sample_variable'] = t('Lorem ipsum.');
+
+  // kint($node);
+  if (isset($variables['page']['sidebar_first'])){
+    $variables['attributes']['class'][] = 'body-sidebar-first';
+  }
+  if (isset($variables['page']['sidebar_second'])){
+    $variables['attributes']['class'][] = 'body-sidebar-second';
+  }
+  if (isset($variables['page']['sidebar_second']) && isset($variables['page']['sidebar_first'] )){
+    $variables['attributes']['class'][] = 'body-two-sidebars';
+  }
+   
+
+  
+  
+}
+
+
+function clarity_preprocess_page(&$variables) {
+  $variables['sample_variable'] = t('Lorem ipsum.');
+  $theme_handler = \Drupal::service('theme_handler');
+$default_theme = $theme_handler->getDefault();
+$theme_path = $theme_handler->getTheme($default_theme)->getPath();
+
+
+
+  $variables['satellite'] = $theme_path ;
+
+  
+
+}
+
+
+
+
+function clarity_preprocess_node(&$variables, $hook) {
+  $variables['sample_variable'] = t('Lorem ipsum.');
+  $node = $variables ['elements']['#node'];
+
+}
+
+
+
+ 
+function clarity_preprocess_views_view(&$variables) {
+  $variables['clarity_attributes_header'] = [];
+  $variables['clarity_attributes_footer'] = [];
+  $variables['clarity_attributes_header'] = new Attribute();
+  $variables['clarity_attributes_footer'] = new Attribute();
+  $variables['clarity_attributes_header']['class'] = [];
+  $variables['clarity_attributes_footer']['class'] = [];
+  $variables['clarity_attributes_header']['class'][] = 'view-header';
+  $variables['clarity_attributes_footer']['class'][] = 'view-footer';
+  $view = $variables['view'];
+  if ($view->id() == 'study_group_main_navigation_v2' && ( $view->current_display == 'block_1' ||$view->current_display == 'block_2')){ 
+    
+    $variables['clarity_attributes_header']['class'][] = 'well';
+    $variables['clarity_attributes_header']['class'][] = 'well-sm';
+   /* foreach ($view->argument as $arg) {
+      if ($arg->getPluginId() == 'null'){
+        $currentNode = $arg->getValue();
+      }
+    }
+    $rows = $variables['rows'];
+    foreach ($rows as $id => $row) {
+    if($currentNode){
+      if($currentNode == $row['content']['#row']->field_field_eu_gl_methodology_taxonomy_term_field_data_nid){
+        $class = 'active';
+        if (!isset($variables['rows'][$id]['attributes']['class'])) {
+          $variables['rows'][$id]['attributes']['class'] = [];
+        }
+        $variables['rows'][$id]['attributes']['class'][] = $class;
+      }
+    } 
+    }*/
+  }
+  if ($view->id() == 'data_resources' && $view->current_display == 'block_1'){ 
+   // kint($variables);
+  }
+
+}
+
+function clarity_preprocess_views_view_list(&$variables) {
+
+  $view = $variables['view'];
+  if ($view->id() == 'study_group_main_navigation_v2' && $view->current_display == 'block_1'){ 
+    
+    foreach ($view->argument as $arg) {
+      if ($arg->getPluginId() == 'null'){
+        $currentNode = $arg->getValue();
+      }
+    }
+    $rows = $variables['rows'];
+    foreach ($rows as $id => $row) {
+      if($currentNode == $row['content']['#row']->field_field_eu_gl_methodology_taxonomy_term_field_data_nid){
+        $class = 'active';
+        if (!isset($variables['rows'][$id]['attributes']['class'])) {
+          $variables['rows'][$id]['attributes']['class'] = [];
+        }
+        $variables['rows'][$id]['attributes']['class'][] = $class;
+      }
+    } 
+  }
+
+}
+
+function clarity_preprocess_views_view_grouping(&$variables){
+  $view = $variables['view'];
+  if ($view->id() == 'data_resources' && $view->current_display == 'block_1'){ 
+    kint($variables);
+  }
+}

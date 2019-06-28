@@ -1,0 +1,35 @@
+.views-table {
+  background:white;
+  border-collapse: collapse;
+  border:6px solid $gris_80;
+  td,th {
+    padding:3px 5px;
+    border:4px solid $gris_80;
+  }
+  th {
+    background:$gris_20;
+    color:white;
+    font-weight:normal;
+    text-align:left;
+
+    text-transform:uppercase;
+    a {
+      color:white;
+    }
+  }
+  td {
+    vertical-align:top;
+    
+  }
+  td.is-active {
+    background:transparentize($gris_30, .95);
+  }
+  tbody {
+    tr {
+      // border-bottom:1px solid $gris_80;
+      &:hover {
+        background:$bk_2_1;
+      }
+    }
+  }
+}

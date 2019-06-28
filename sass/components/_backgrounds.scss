@@ -1,0 +1,94 @@
+html {
+  height: auto;
+  min-height: 100%;
+}
+
+body {
+  background:$gris_80;
+  background:linear-gradient(to bottom, $gris_60 120px, $gris_90 421px,$gris_98);
+    background-attachment: fixed;
+  @media (min-width:$device) {
+    background-image:url(../images/bk.jpg);
+    background-size:cover;
+    background-position:0 0;
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+  }
+  
+  
+  
+  
+  &.toolbar-horizontal {
+		// background-image:linear-gradient(to bottom,$gris_95, $gris_95 80px, white 130px);
+    
+	}
+}
+.region-breadcrumb ol ,
+.region-breadcrumb ol a,
+.region-breadcrumb ol li:before,
+h1.page-title {
+  color:white;
+  text-shadow:2px 2px 6px transparentize($bk_4_1, .2);
+}
+
+
+.layout-container  {
+    
+}
+main {
+  background:transparentize($bk_1_2,.2);
+  // background:$bk_1_2;
+  padding-right:20px;
+  padding-left:20px;
+}
+body.path-adaptation-options-overview-list {
+  main {
+    background:transparent;
+    padding-right:0px;
+    padding-left:0px;
+  }
+}
+body.path-study {
+  main {
+    background:transparent;
+    padding-right:0px;
+    padding-left:0px;
+  }
+  .block-system-main-block  {
+    // background:transparentize(white,.2);
+    background:transparentize($bk_1_2,.2);
+    // background:transparentize(red,.1);
+    @include clear();
+  padding-right:20px;
+  padding-left:20px;
+  }
+}
+#header-wrap {
+  background:transparentize($color:white, $amount: .33);
+  background:transparentize($bk_1_2,.2);
+  // color:white;
+  a {
+    // color:white;
+  }
+}
+
+.dialog-off-canvas-main-canvas {
+  // display:none;
+}
+
+footer {
+  background:transparentize($bk_1_2,.6);
+  .node__meta {
+  
+  }
+}
+body:not(.path-frontpage) {
+
+}
+
+footer.node__meta {
+   color:$claro;
+   background:none;
+   overflow:hidden;
+   margin:0.5em 0;
+  }

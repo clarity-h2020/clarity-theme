@@ -1,0 +1,26 @@
+name: "clarity"
+description: "clarity theme Desc"
+type: theme
+core: 8.x
+base theme: classy
+libraries:
+  - clarity/global-styling
+libraries-override:
+    classy/base:
+      css:
+        component:
+          css/components/menu.css: false 
+regions:
+  user_menu: 'User menu'
+  sidebar_first: 'Left sidebar'
+  sidebar_second: 'Right sidebar'
+  front_content: 'Front Content'
+  title_heading: 'Title Heading'
+  content: Content
+  header: Header
+  primary_menu: 'Primary menu'
+  secondary_menu: 'Secondary menu'
+  footer: Footer
+  highlighted: Highlighted
+  help: Help
+  breadcrumb: Breadcrumb

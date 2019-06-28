@@ -1,0 +1,36 @@
+body.path-partners {
+  .view-partners .view-content  {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); 
+    grid-gap: 20px;
+    .views-row {
+      @include white-box();
+      display:flex;
+      flex-direction: column; 
+      justify-content:space-between;
+      flex-wrap: nowrap ;
+    }
+    .views-field-field-image {
+      flex-basis:100%;
+      padding:0 30px;
+      justify-self: stretch;
+      display:flex;
+      align-items: center;   
+    }
+    .views-field-title {
+      text-align:center;
+      color:$claro;
+    a {color:$claro;}
+      justify-self: flex-end;
+    }
+  }
+  .views-field-field-links {
+    border-top:1px solid $gris_80;
+    font-size:.8125em;
+    color:$claro;
+    a {
+      color:$claro;
+    }
+    text-align:center;
+  }
+}

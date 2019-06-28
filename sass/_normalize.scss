@@ -1,0 +1,46 @@
+p {
+  margin:0 0 1.5em;
+}
+p + p {
+  margin:1.5em 0;
+}
+
+
+
+
+#colores {
+  @include reset-list();
+  
+  li {
+    width:120px;
+    height:120px;
+    float:left;
+    margin-right:15px;
+    
+  }
+  span {
+    background:transparentize($bk,.5);
+    color:white;
+    padding:2px 5px;
+    display:block;
+    font-size:12px;
+  }
+  .bk {
+    background:$bk;
+  }
+  .bk_1 {
+    background:$bk_1;
+  }
+  .bk_2 {
+    background:$bk_2;
+  }
+  .bk_2_1 {
+    background:$bk_2_1;
+  }
+  .bk_3 {
+    background:$bk_3;
+  }
+  .bk_3_1 {
+    background:$bk_3_1;
+  }
+}

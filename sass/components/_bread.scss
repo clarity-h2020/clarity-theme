@@ -1,0 +1,17 @@
+.region-breadcrumb {
+    a {
+        // color:white;
+        text-decoration:none;
+        color:$general;
+    }
+    nav > ol {
+        display:flex;
+        justify-content: center;
+    }
+}
+
+.breadcrumb li:before {
+    
+    color:$general;
+    margin:0 10px;
+}
