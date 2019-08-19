@@ -5,22 +5,24 @@ core: 8.x
 base theme: classy
 libraries:
   - clarity/global-styling
+  - clarity/global-scripts
 libraries-override:
     classy/base:
       css:
         component:
-          css/components/menu.css: false 
+          css/components/menu.css: false
 regions:
-  user_menu: 'User menu'
-  sidebar_first: 'Left sidebar'
-  sidebar_second: 'Right sidebar'
-  front_content: 'Front Content'
-  title_heading: 'Title Heading'
-  content: Content
   header: Header
+  title_heading: 'Title Heading'
+  breadcrumb: Breadcrumb
   primary_menu: 'Primary menu'
   secondary_menu: 'Secondary menu'
-  footer: Footer
   highlighted: Highlighted
+  front_content: 'Front Content'
+  content: Content
+  sidebar_first: 'Left sidebar'
+  sidebar_second: 'Right sidebar'
+  footer: Footer
   help: Help
-  breadcrumb: Breadcrumb
+  user_menu: 'User menu'
+

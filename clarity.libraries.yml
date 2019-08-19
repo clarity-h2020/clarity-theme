@@ -2,15 +2,12 @@ global-styling:
   css:
     theme:
       css/style.css: {}
-  js:
-    js/main.js: {}
-  dependencies:
-    - core/jquery
-    - core/drupal
+
 global-scripts:
   version: 0.2
   header: true
   js:
+    js/main.js: {}
     js/seamless.parent.js: {preprocess: false}
     js/csis.js: {}
   dependencies:
@@ -18,4 +15,4 @@ global-scripts:
     - core/jquery.once
     - core/drupal
     - core/drupal.ajax
-    - core/drupalSettings 
+    - core/drupalSettings
