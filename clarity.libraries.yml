@@ -8,7 +8,6 @@ global-scripts:
   header: true
   js:
     js/main.js: {}
-    js/seamless.parent.js: {preprocess: false}
     js/csis.js: {}
   dependencies:
     - core/jquery
