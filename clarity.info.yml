@@ -26,3 +26,14 @@ regions:
   help: Help
   user_menu: 'User menu'
 
+entity_print:
+  node:
+    # Adds article-pdf css library to the Article bundle on the Node entity.
+    gl_step: 'clarity/print-gl_step'
+    # Adds the all-nodes library to all node PDF’s.
+    all: 'clarity/print-all-nodes'
+  group:
+    study: 'clarity/print-study'
+    all: 'clarity/print-all-groups'
+
+

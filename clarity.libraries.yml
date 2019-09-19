@@ -15,3 +15,24 @@ global-scripts:
     - core/drupal
     - core/drupal.ajax
     - core/drupalSettings
+
+# Entity print custom css files
+print-gl_step:
+  css:
+    theme:
+      css/print-gl_step.css: {}
+
+print-all-nodes:
+  css:
+    theme:
+      css/print-all-nodes.css: {}
+
+print-study:
+  css:
+    theme:
+      css/print-study.css: {}
+
+print-all-groups:
+  css:
+    theme:
+      css/print-all-groups.css: {}
