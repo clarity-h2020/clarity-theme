@@ -262,13 +262,16 @@ footer {
 .btn,
 a.btn {
   text-decoration:none;
-  border:1px solid $gris_20;
+  border:4px double $bk;
   display:inline-block;
   padding:5px 10px;
   border-radius:$radius;
+  background:white;
+  color:$bk;
   
   
 }
+
 
 #block-aboutus a.btn {
   border-color:white;

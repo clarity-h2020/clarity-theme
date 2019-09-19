@@ -51,8 +51,8 @@ body.path-adaptation-options-overview-list {
 body.path-study {
   main {
     background:transparent;
-    padding-right:0px;
-    padding-left:0px;
+    // padding-right:0px;
+    // padding-left:0px;
   }
   .block-system-main-block  {
     // background:transparentize(white,.2);
@@ -92,3 +92,13 @@ footer.node__meta {
    overflow:hidden;
    margin:0.5em 0;
   }
+.layout-content,
+.layout-sidebar-second,
+.layout-sidebar-first {
+  // background:transparentize(navy,.8);
+  // background:transparentize($bk_1_2,.2);
+  
+  // padding-right:20px;
+  // padding-left:20px;
+
+}

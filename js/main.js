@@ -2,6 +2,7 @@
 (function ($) {
   Drupal.behaviors.myToggle = {
     attach: function(context, settings) {
+      
         // var $body = $('#block-trialobjectivesinstructions');
         // $($body).hide();
         $('#region-help').hide();
@@ -29,5 +30,22 @@
       });
       
     }
+  };
+  Drupal.behaviors.myMenus = {
+    attach: function(context, settings) {
+      
+      $( "#tabs" ).tabs({
+        collapsible:true,
+        //  active: false
+        
+      });
+     
+        
+      
+
+     
+
+      }
+    
   };
 })(jQuery);
