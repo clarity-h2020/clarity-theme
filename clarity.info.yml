@@ -13,8 +13,6 @@ libraries-override:
           css/components/menu.css: false
     core/jquery.ui:
       css:
-        component:
-          assets/vendor/jquery.ui/themes/base/core.css: false
         theme:
           assets/vendor/jquery.ui/themes/base/theme.css: false
     core/jquery.ui.tabs:
