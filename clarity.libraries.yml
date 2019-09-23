@@ -9,7 +9,6 @@ global-scripts:
   js:
     js/main.js: {}
     js/csis.js: {}
-    js/seamless.parent.js: {preprocess: false}
   dependencies:
     - core/jquery
     - core/jquery.once
