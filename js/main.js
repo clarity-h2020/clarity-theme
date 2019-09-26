@@ -36,7 +36,7 @@
       
       $( "#tabs" ).tabs({
         collapsible:true,
-        //  active: false
+        //  active: 1
         
       });
      

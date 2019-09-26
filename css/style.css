@@ -2228,6 +2228,7 @@ body.toolbar-tray-open.toolbar-vertical.toolbar-fixed {
   margin: 0;
   padding: 0;
   list-style-type: none;
+  margin-top: 1.5rem;
   display: flex;
 }
 /* line 5, ../sass/_mixins.scss */
@@ -2238,50 +2239,50 @@ body.toolbar-tray-open.toolbar-vertical.toolbar-fixed {
   margin: 0;
   list-style-type: none;
 }
-/* line 12, ../sass/components/_tabs.scss */
+/* line 13, ../sass/components/_tabs.scss */
 #tabs .ui-tabs-nav a {
   text-decoration: none;
   display: block;
-  background: white;
   color: #464646;
   padding: 5px 10px;
   border: 1px solid #0b7dbd;
   border-bottom: none;
   outline: none;
+  font-weight: 600;
 }
-/* line 22, ../sass/components/_tabs.scss */
+/* line 24, ../sass/components/_tabs.scss */
 #tabs .ui-tabs-nav a:hover {
   background: #325197;
   color: white;
 }
-/* line 29, ../sass/components/_tabs.scss */
+/* line 31, ../sass/components/_tabs.scss */
 #tabs .ui-tabs-nav li.ui-state-active a {
-  background: #0b7dbd;
-  color: white;
+  background: rgba(255, 255, 255, 0.6);
+  color: #464646;
 }
-/* line 37, ../sass/components/_tabs.scss */
+/* line 39, ../sass/components/_tabs.scss */
 #tabs .ui-tabs-nav li:not(:last-of-type) a {
   border-right: none;
 }
-/* line 43, ../sass/components/_tabs.scss */
+/* line 45, ../sass/components/_tabs.scss */
 #tabs .ui-tabs-nav li:first-of-type a {
   border-radius: 6px 0 0 0;
 }
-/* line 49, ../sass/components/_tabs.scss */
+/* line 51, ../sass/components/_tabs.scss */
 #tabs .ui-tabs-nav li:last-of-type a {
   border-radius: 0 6px 0 0;
 }
-/* line 55, ../sass/components/_tabs.scss */
+/* line 57, ../sass/components/_tabs.scss */
 #tabs .ui-tabs-panel {
   padding: 1.5rem;
   margin-top: -2px;
-  background: #0b7dbd;
+  background: rgba(255, 255, 255, 0.6);
   border: 1px solid #0b7dbd;
-  color: white;
+  color: #464646;
 }
-/* line 61, ../sass/components/_tabs.scss */
+/* line 63, ../sass/components/_tabs.scss */
 #tabs .ui-tabs-panel a {
-  color: white;
+  color: #464646;
 }
 
 /* line 1, ../sass/components/_navigation-second.scss */
@@ -3026,7 +3027,7 @@ body.path-partners .view-partners .view-content {
 /* line 6, ../sass/views/_views-partners.scss */
 body.path-partners .view-partners .view-content .views-row {
   background: white;
-  border: 1px solid #cccccc;
+  border: 1px solid #0b7dbd;
   padding: 5px 15px;
   border-radius: 6px;
   box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
@@ -3287,28 +3288,91 @@ body.path-frontpage main .view-id-stakeholders {
   transform: translate(0px, 0px);
 }
 
-/* line 21, ../sass/views/_views-step-data.scss */
+/* line 5, ../sass/views/_views-step-data.scss */
+#edit-group-contexts--content > .field,
+#edit-group-data--content > .field,
+.none > .field {
+  display: grid;
+  grid-template-columns: 12em 1fr;
+  grid-gap: 20px;
+  background: white;
+  padding: 5px;
+  margin-bottom: 1.5rem;
+}
+/* line 12, ../sass/views/_views-step-data.scss */
+#edit-group-contexts--content > .field h4,
+#edit-group-data--content > .field h4,
+.none > .field h4 {
+  text-align: right;
+  margin: 0;
+}
+/* line 16, ../sass/views/_views-step-data.scss */
+#edit-group-contexts--content > .field ul,
+#edit-group-data--content > .field ul,
+.none > .field ul {
+  margin: 0;
+}
+
+/* line 42, ../sass/views/_views-step-data.scss */
 .view-step-data-collection .group-level-2 .grouped-content {
   clear: both;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 5px 20px;
 }
-/* line 35, ../sass/views/_views-step-data.scss */
+/* line 52, ../sass/views/_views-step-data.scss */
+.view-step-data-collection .group-level-2 .grouped-content > .show-in-preview {
+  grid-column: span 3;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+/* line 61, ../sass/views/_views-step-data.scss */
 .view-step-data-collection .group-level-2 .grouped-content .views-field-title {
   margin-bottom: 5px;
+  font-size: .875em;
 }
-/* line 37, ../sass/views/_views-step-data.scss */
+/* line 65, ../sass/views/_views-step-data.scss */
 .view-step-data-collection .group-level-2 .grouped-content .views-field-title div {
   background: rgba(255, 255, 255, 0.7);
   padding: 5px 10px;
   border: 1px solid #0b7dbd;
+  border-radius: 6px;
   cursor: pointer;
   overflow: hidden;
+  padding-left: 49px;
+  position: relative;
 }
-/* line 45, ../sass/views/_views-step-data.scss */
+/* line 75, ../sass/views/_views-step-data.scss */
 .view-step-data-collection .group-level-2 .grouped-content .views-field-title div.active {
   background: #0b7dbd;
   color: white;
 }
-/* line 54, ../sass/views/_views-step-data.scss */
+/* line 81, ../sass/views/_views-step-data.scss */
+.view-step-data-collection .group-level-2 .grouped-content .views-field-title div:before {
+  font-family: iconos;
+  content: "\e909";
+  position: absolute;
+  top: 0px;
+  left: 3px;
+  font-size: 29px;
+}
+/* line 92, ../sass/views/_views-step-data.scss */
+.view-step-data-collection .group-level-2 .grouped-content .tax-summer-days .views-field-title div:before {
+  content: "\e908";
+}
+/* line 96, ../sass/views/_views-step-data.scss */
+.view-step-data-collection .group-level-2 .grouped-content .tax-hot-days .views-field-title div:before {
+  content: "\e907";
+}
+/* line 100, ../sass/views/_views-step-data.scss */
+.view-step-data-collection .group-level-2 .grouped-content .tax-heat-wave .views-field-title div:before {
+  content: "\e906";
+}
+/* line 104, ../sass/views/_views-step-data.scss */
+.view-step-data-collection .group-level-2 .grouped-content .tax-heat-wave-duration .views-field-title div:before {
+  content: "\e90a";
+}
+/* line 111, ../sass/views/_views-step-data.scss */
 .view-step-data-collection .tabbable ul.nav-tabs {
   margin: 0;
   padding: 0;
@@ -3323,7 +3387,7 @@ body.path-frontpage main .view-id-stakeholders {
   margin: 0;
   list-style-type: none;
 }
-/* line 58, ../sass/views/_views-step-data.scss */
+/* line 115, ../sass/views/_views-step-data.scss */
 .view-step-data-collection .tabbable ul.nav-tabs li a {
   background: white;
   display: block;
@@ -3331,37 +3395,38 @@ body.path-frontpage main .view-id-stakeholders {
   border: 1px solid #0b7dbd;
   border-right: none;
 }
-/* line 66, ../sass/views/_views-step-data.scss */
+/* line 123, ../sass/views/_views-step-data.scss */
 .view-step-data-collection .tabbable ul.nav-tabs li:first-of-type a {
   border-radius: 6px 0 0 0;
 }
-/* line 69, ../sass/views/_views-step-data.scss */
+/* line 126, ../sass/views/_views-step-data.scss */
 .view-step-data-collection .tabbable ul.nav-tabs li:last-of-type a {
   border-radius: 0 6px 0 0;
   border-right: 1px solid #0b7dbd;
 }
 
-/* line 88, ../sass/views/_views-step-data.scss */
+/* line 145, ../sass/views/_views-step-data.scss */
 #edit-group-general--content .field--name-field-contributors .item-list > ul {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   grid-gap: 30px;
 }
-/* line 96, ../sass/views/_views-step-data.scss */
+/* line 153, ../sass/views/_views-step-data.scss */
 #edit-group-general--content .field--name-field-contributors .item-list > ul li {
-  padding: 10px;
+  background: white;
+  border: 1px solid #0b7dbd;
+  padding: 5px 15px;
   border-radius: 6px;
-  box-shadow: 2px 2px 8px #0b7dbd;
-  background: rgba(0, 90, 117, 0.5);
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
 }
 @media (min-width: 768px) {
-  /* line 108, ../sass/views/_views-step-data.scss */
+  /* line 164, ../sass/views/_views-step-data.scss */
   #edit-group-general--content .col-sm-1, #edit-group-general--content .col-sm-2, #edit-group-general--content .col-sm-3, #edit-group-general--content .col-sm-4, #edit-group-general--content .col-sm-5, #edit-group-general--content .col-sm-6, #edit-group-general--content .col-sm-7, #edit-group-general--content .col-sm-8, #edit-group-general--content .col-sm-9, #edit-group-general--content .col-sm-10, #edit-group-general--content .col-sm-11, #edit-group-general--content .col-sm-12 {
     float: none;
   }
 }
 
-/* line 120, ../sass/views/_views-step-data.scss */
+/* line 176, ../sass/views/_views-step-data.scss */
 #edit-group-contexts > div > .field,
 #edit-group-data > div > .field {
   display: grid;
@@ -3372,13 +3437,13 @@ body.path-frontpage main .view-id-stakeholders {
   background: rgba(255, 255, 255, 0.7);
   margin-bottom: 10px;
 }
-/* line 129, ../sass/views/_views-step-data.scss */
+/* line 185, ../sass/views/_views-step-data.scss */
 #edit-group-contexts > div > .field h4,
 #edit-group-data > div > .field h4 {
   text-align: right;
   margin: 0;
 }
-/* line 133, ../sass/views/_views-step-data.scss */
+/* line 189, ../sass/views/_views-step-data.scss */
 #edit-group-contexts > div > .field ul,
 #edit-group-data > div > .field ul {
   margin-top: 0;
@@ -4006,7 +4071,7 @@ article.node--view-mode-teaser .field--name-field-image {
 /* line 12, ../sass/components/_nodes-partners.scss */
 .node--type-partners.node--view-mode-full .field--name-field-partner-cv .field__items > .field__item {
   background: white;
-  border: 1px solid #cccccc;
+  border: 1px solid #0b7dbd;
   padding: 5px 15px;
   border-radius: 6px;
   box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);

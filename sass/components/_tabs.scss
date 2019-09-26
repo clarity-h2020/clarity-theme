@@ -1,10 +1,11 @@
 #tabs {
     $border:1px solid $bk;
     $back:$bk_1_2;
-    $back:$bk;
-    $text:white;
+    $back:transparentize(white,.4);
+    $text:$general;
     .ui-tabs-nav {
         @include reset-list();
+        margin-top:1.5rem;
         display:flex;
         
         
@@ -12,12 +13,13 @@
         a {
             text-decoration:none;
             display:block;
-            background:white;
+            // background:white;
             color:$general;
             padding:5px 10px;
             border: $border;
             border-bottom:none;
             outline:none;
+            font-weight:600;
 
             &:hover {
                 background:$bk_1;

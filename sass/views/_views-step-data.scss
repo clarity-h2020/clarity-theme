@@ -1,5 +1,26 @@
+#edit-group-contexts--content,
+// #edit-group-general--content,
+#edit-group-data--content,
+.none {
+    & >     .field {
+        display:grid;
+        grid-template-columns:12em 1fr;
+        grid-gap: 20px;
+        background:white;
+        padding:5px;
+        margin-bottom:1.5rem;
+        h4 {
+            text-align:right;
+            margin:0;
+        }
+        ul {
+            margin:0;
+        }
+
+    }
+}
 .view-step-data-collection {
-    // background:red;
+    
     .group-level-0 {
         // float:left;
         
@@ -20,34 +41,70 @@
     }
     .group-level-2 .grouped-content {
         clear:both;
-        // display:grid;
-        // grid-template-columns: repeat(auto-fill, minmax(64px, 1fr));
-        // grid-template-columns: repeat(2, 1fr);
+        display:grid;
+        
+        grid-template-columns: repeat(3, 1fr);
 
-        // grid-gap: 5px 30px;
+        grid-gap: 5px 20px;
         // border:2px solid red;
         // padding:1em;
 
         & > .show-in-preview {
             // display:none;
-        }
+            grid-column:span 3;
+            font-weight:600;
+            text-transform:uppercase;
 
+
+        }
+        $icono:29px;
         .views-field-title {
             margin-bottom:5px;
+            font-size:.875em;
+          
             div {
                 // margin:1em;
                 background:transparentize(white,.3);
                 
+                
                 padding:5px 10px;
                 border:1px solid $bk;
+                border-radius:6px;
                 cursor:pointer;
                 overflow:hidden;
                 &.active {
                     background:$bk;
                     color:white;
                 }
+                padding-left:$icono + 20;
+                position:relative;
+                &:before {
+                    font-family:iconos;
+                    content:"\e909";
+                    position:absolute;
+                    top:0px;
+                    left:3px;
+                    font-size:$icono;
+                }
 
             }
+        }
+        .tax-summer-days .views-field-title div:before {
+
+            content:"\e908";
+        }
+        .tax-hot-days .views-field-title div:before {
+
+            content:"\e907";
+        }
+        .tax-heat-wave .views-field-title div:before {
+
+            content:"\e906";
+        }
+        .tax-heat-wave-duration .views-field-title div:before {
+
+            content:"\e90a";
+            
         }
     }
     .tabbable {
@@ -95,11 +152,10 @@
         grid-gap: 30px;
         li {
             // background:transparentize(white,.3);
-            padding:10px;
-            border-radius:6px;
-            box-shadow:2px 2px 8px $bk;
+            @include white-box();
+            
             // border:1px solid transparentize(white,.5);
-            background:transparentize($bk_1_3,.5);
+            // background:transparentize($bk_1_3,.5);
         }
             }
         }
