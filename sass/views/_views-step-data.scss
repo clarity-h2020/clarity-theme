@@ -7,7 +7,35 @@
 .view-step-data-collection {
     
     .group-level-0 {
-    //    float:left;
+        .show-in-preview,
+        h4,
+        h3,
+        h2 {
+            margin:.5rem 0;
+            font-size:1em;
+            display:block;
+        }
+        h2 {
+            text-transform:uppercase;
+        }
+       
+        .grouped-content {
+            padding-left:1rem;
+
+        }
+        & > .grouped-content,
+        & > .group-title {
+            // float:left;
+        }
+    }
+    .group-level-2 {
+        .group-title,
+        .grouped-content {
+            // clear:both;
+        }
+        .show-in-preview {
+            // font-size:.875em;
+        }
     }
 }
 
@@ -35,6 +63,8 @@
 
     }
 }
+
+
 .view-step-data-collection {
     
     .group-level-0 {

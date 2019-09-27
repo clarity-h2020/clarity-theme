@@ -3310,7 +3310,25 @@ body.path-frontpage main .view-id-stakeholders {
   transform: translate(0px, 0px);
 }
 
-/* line 21, ../sass/views/_views-step-data.scss */
+/* line 10, ../sass/views/_views-step-data.scss */
+.view-step-data-collection .group-level-0 .show-in-preview,
+.view-step-data-collection .group-level-0 h4,
+.view-step-data-collection .group-level-0 h3,
+.view-step-data-collection .group-level-0 h2 {
+  margin: .5rem 0;
+  font-size: 1em;
+  display: block;
+}
+/* line 18, ../sass/views/_views-step-data.scss */
+.view-step-data-collection .group-level-0 h2 {
+  text-transform: uppercase;
+}
+/* line 22, ../sass/views/_views-step-data.scss */
+.view-step-data-collection .group-level-0 .grouped-content {
+  padding-left: 1rem;
+}
+
+/* line 49, ../sass/views/_views-step-data.scss */
 #edit-group-contexts--content > .field,
 #edit-group-data--content > .field,
 .none > .field {
@@ -3321,36 +3339,36 @@ body.path-frontpage main .view-id-stakeholders {
   padding: 5px;
   margin-bottom: 1.5rem;
 }
-/* line 28, ../sass/views/_views-step-data.scss */
+/* line 56, ../sass/views/_views-step-data.scss */
 #edit-group-contexts--content > .field h4,
 #edit-group-data--content > .field h4,
 .none > .field h4 {
   text-align: right;
   margin: 0;
 }
-/* line 32, ../sass/views/_views-step-data.scss */
+/* line 60, ../sass/views/_views-step-data.scss */
 #edit-group-contexts--content > .field ul,
 #edit-group-data--content > .field ul,
 .none > .field ul {
   margin: 0;
 }
 
-/* line 58, ../sass/views/_views-step-data.scss */
+/* line 88, ../sass/views/_views-step-data.scss */
 .view-step-data-collection .group-level-2 .grouped-content {
   clear: both;
 }
-/* line 68, ../sass/views/_views-step-data.scss */
+/* line 98, ../sass/views/_views-step-data.scss */
 .view-step-data-collection .group-level-2 .grouped-content > .show-in-preview {
   grid-column: span 3;
   font-weight: 600;
   text-transform: uppercase;
 }
-/* line 77, ../sass/views/_views-step-data.scss */
+/* line 107, ../sass/views/_views-step-data.scss */
 .view-step-data-collection .group-level-2 .grouped-content .views-field-title {
   margin-bottom: 5px;
   font-size: .875em;
 }
-/* line 81, ../sass/views/_views-step-data.scss */
+/* line 111, ../sass/views/_views-step-data.scss */
 .view-step-data-collection .group-level-2 .grouped-content .views-field-title div {
   background: rgba(255, 255, 255, 0.7);
   padding: 5px 10px;
@@ -3361,12 +3379,12 @@ body.path-frontpage main .view-id-stakeholders {
   padding-left: 34px;
   position: relative;
 }
-/* line 91, ../sass/views/_views-step-data.scss */
+/* line 121, ../sass/views/_views-step-data.scss */
 .view-step-data-collection .group-level-2 .grouped-content .views-field-title div.active {
   background: #0b7dbd;
   color: white;
 }
-/* line 97, ../sass/views/_views-step-data.scss */
+/* line 127, ../sass/views/_views-step-data.scss */
 .view-step-data-collection .group-level-2 .grouped-content .views-field-title div:before {
   font-family: iconos;
   content: "\e909";
@@ -3375,23 +3393,23 @@ body.path-frontpage main .view-id-stakeholders {
   left: 3px;
   font-size: 24px;
 }
-/* line 108, ../sass/views/_views-step-data.scss */
+/* line 138, ../sass/views/_views-step-data.scss */
 .view-step-data-collection .group-level-2 .grouped-content .tax-summer-days .views-field-title div:before {
   content: "\e908";
 }
-/* line 112, ../sass/views/_views-step-data.scss */
+/* line 142, ../sass/views/_views-step-data.scss */
 .view-step-data-collection .group-level-2 .grouped-content .tax-hot-days .views-field-title div:before {
   content: "\e907";
 }
-/* line 116, ../sass/views/_views-step-data.scss */
+/* line 146, ../sass/views/_views-step-data.scss */
 .view-step-data-collection .group-level-2 .grouped-content .tax-heat-wave .views-field-title div:before {
   content: "\e906";
 }
-/* line 120, ../sass/views/_views-step-data.scss */
+/* line 150, ../sass/views/_views-step-data.scss */
 .view-step-data-collection .group-level-2 .grouped-content .tax-heat-wave-duration .views-field-title div:before {
   content: "\e90a";
 }
-/* line 127, ../sass/views/_views-step-data.scss */
+/* line 157, ../sass/views/_views-step-data.scss */
 .view-step-data-collection .tabbable ul.nav-tabs {
   margin: 0;
   padding: 0;
@@ -3406,7 +3424,7 @@ body.path-frontpage main .view-id-stakeholders {
   margin: 0;
   list-style-type: none;
 }
-/* line 131, ../sass/views/_views-step-data.scss */
+/* line 161, ../sass/views/_views-step-data.scss */
 .view-step-data-collection .tabbable ul.nav-tabs li a {
   background: white;
   display: block;
@@ -3414,23 +3432,23 @@ body.path-frontpage main .view-id-stakeholders {
   border: 1px solid #0b7dbd;
   border-right: none;
 }
-/* line 139, ../sass/views/_views-step-data.scss */
+/* line 169, ../sass/views/_views-step-data.scss */
 .view-step-data-collection .tabbable ul.nav-tabs li:first-of-type a {
   border-radius: 6px 0 0 0;
 }
-/* line 142, ../sass/views/_views-step-data.scss */
+/* line 172, ../sass/views/_views-step-data.scss */
 .view-step-data-collection .tabbable ul.nav-tabs li:last-of-type a {
   border-radius: 0 6px 0 0;
   border-right: 1px solid #0b7dbd;
 }
 
-/* line 161, ../sass/views/_views-step-data.scss */
+/* line 191, ../sass/views/_views-step-data.scss */
 #edit-group-general--content .field--name-field-contributors .item-list > ul {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   grid-gap: 30px;
 }
-/* line 169, ../sass/views/_views-step-data.scss */
+/* line 199, ../sass/views/_views-step-data.scss */
 #edit-group-general--content .field--name-field-contributors .item-list > ul li {
   background: white;
   border: 1px solid #0b7dbd;
@@ -3439,13 +3457,13 @@ body.path-frontpage main .view-id-stakeholders {
   box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
 }
 @media (min-width: 768px) {
-  /* line 180, ../sass/views/_views-step-data.scss */
+  /* line 210, ../sass/views/_views-step-data.scss */
   #edit-group-general--content .col-sm-1, #edit-group-general--content .col-sm-2, #edit-group-general--content .col-sm-3, #edit-group-general--content .col-sm-4, #edit-group-general--content .col-sm-5, #edit-group-general--content .col-sm-6, #edit-group-general--content .col-sm-7, #edit-group-general--content .col-sm-8, #edit-group-general--content .col-sm-9, #edit-group-general--content .col-sm-10, #edit-group-general--content .col-sm-11, #edit-group-general--content .col-sm-12 {
     float: none;
   }
 }
 
-/* line 192, ../sass/views/_views-step-data.scss */
+/* line 222, ../sass/views/_views-step-data.scss */
 #edit-group-contexts > div > .field,
 #edit-group-data > div > .field {
   display: grid;
@@ -3456,13 +3474,13 @@ body.path-frontpage main .view-id-stakeholders {
   background: rgba(255, 255, 255, 0.7);
   margin-bottom: 10px;
 }
-/* line 201, ../sass/views/_views-step-data.scss */
+/* line 231, ../sass/views/_views-step-data.scss */
 #edit-group-contexts > div > .field h4,
 #edit-group-data > div > .field h4 {
   text-align: right;
   margin: 0;
 }
-/* line 205, ../sass/views/_views-step-data.scss */
+/* line 235, ../sass/views/_views-step-data.scss */
 #edit-group-contexts > div > .field ul,
 #edit-group-data > div > .field ul {
   margin-top: 0;
