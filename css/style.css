@@ -3310,11 +3310,6 @@ body.path-frontpage main .view-id-stakeholders {
   transform: translate(0px, 0px);
 }
 
-/* line 9, ../sass/views/_views-step-data.scss */
-.view-step-data-collection .group-level-0 {
-  float: left;
-}
-
 /* line 21, ../sass/views/_views-step-data.scss */
 #edit-group-contexts--content > .field,
 #edit-group-data--content > .field,
@@ -3343,9 +3338,6 @@ body.path-frontpage main .view-id-stakeholders {
 /* line 58, ../sass/views/_views-step-data.scss */
 .view-step-data-collection .group-level-2 .grouped-content {
   clear: both;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 5px 20px;
 }
 /* line 68, ../sass/views/_views-step-data.scss */
 .view-step-data-collection .group-level-2 .grouped-content > .show-in-preview {
@@ -3366,7 +3358,7 @@ body.path-frontpage main .view-id-stakeholders {
   border-radius: 6px;
   cursor: pointer;
   overflow: hidden;
-  padding-left: 49px;
+  padding-left: 34px;
   position: relative;
 }
 /* line 91, ../sass/views/_views-step-data.scss */
@@ -3381,7 +3373,7 @@ body.path-frontpage main .view-id-stakeholders {
   position: absolute;
   top: 0px;
   left: 3px;
-  font-size: 29px;
+  font-size: 24px;
 }
 /* line 108, ../sass/views/_views-step-data.scss */
 .view-step-data-collection .group-level-2 .grouped-content .tax-summer-days .views-field-title div:before {

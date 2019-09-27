@@ -1,3 +1,19 @@
+
+
+
+
+
+
+.view-step-data-collection {
+    
+    .group-level-0 {
+    //    float:left;
+    }
+}
+
+
+
+
 #edit-group-contexts--content,
 // #edit-group-general--content,
 #edit-group-data--content,
@@ -41,11 +57,11 @@
     }
     .group-level-2 .grouped-content {
         clear:both;
-        display:grid;
+        // display:grid;
         
-        grid-template-columns: repeat(3, 1fr);
+        // grid-template-columns: repeat(3, 1fr);
 
-        grid-gap: 5px 20px;
+        // grid-gap: 5px 20px;
         // border:2px solid red;
         // padding:1em;
 
@@ -57,7 +73,7 @@
 
 
         }
-        $icono:29px;
+        $icono:24px;
         .views-field-title {
             margin-bottom:5px;
             font-size:.875em;
@@ -76,7 +92,7 @@
                     background:$bk;
                     color:white;
                 }
-                padding-left:$icono + 20;
+                padding-left:$icono + 10;
                 position:relative;
                 &:before {
                     font-family:iconos;
