@@ -11,7 +11,29 @@
 }
 
 
+#block-clarity-useraccountmenu {
+   
+    @media (min-width:$device) {
+        position:absolute;
+        top:0;
+        right:0;
+        // background:red;
+        & > .menu {
+            display:flex;
+            text-transform:uppercase;
+            font-size:.875em;
+            @include reset-list();
+            li {
 
+            }
+            a {
+                display:block;
+                padding:5px 10px;
+                // background:white;
+            }
+        }
+    }
+}
 
 
 

@@ -106,13 +106,13 @@ body.path-frontpage {
   
 }
 @media (min-width:$device) {
-    .menu--account,
+    // .menu--account,
    .menu--main {
     .menu {
        display:flex;
         flex-flow: row no-wrap;
         text-transform: uppercase;
-        
+        justify-content: flex-end;
        
         text-align:center;
       a {
@@ -141,7 +141,7 @@ body.path-frontpage {
     }
   }
   header {
-    .menu--account,
+    // .menu--account,
     .menu--main {
       .menu {
         padding-top:2.5rem;

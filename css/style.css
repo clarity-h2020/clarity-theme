@@ -1537,14 +1537,9 @@ footer.node__meta {
     grid-column: span 2;
     grid-column: span 3;
   }
-  /* line 90, ../sass/components/_pages.scss */
-  #header .region-header .menu--account,
-  #header .region-header .views-element-container {
-    grid-column: span 3;
-  }
   /* line 94, ../sass/components/_pages.scss */
   #header .region-header .menu--main {
-    grid-column: span 6;
+    grid-column: span 9;
   }
   /* line 98, ../sass/components/_pages.scss */
   #header .region-header .region-primary-menu {
@@ -2075,21 +2070,19 @@ body.toolbar-tray-open.toolbar-vertical.toolbar-fixed {
 }
 @media (min-width: 992px) {
   /* line 111, ../sass/components/_navigation.scss */
-  .menu--account .menu,
   .menu--main .menu {
     display: flex;
     flex-flow: row no-wrap;
     text-transform: uppercase;
+    justify-content: flex-end;
     text-align: center;
   }
   /* line 118, ../sass/components/_navigation.scss */
-  .menu--account .menu a,
   .menu--main .menu a {
     color: black;
     padding: 10px 15px;
   }
   /* line 129, ../sass/components/_navigation.scss */
-  .menu--account .menu a.user,
   .menu--main .menu a.user {
     display: inline-block;
     width: 30px;
@@ -2101,7 +2094,6 @@ body.toolbar-tray-open.toolbar-vertical.toolbar-fixed {
     overflow: hidden;
   }
   /* line 60, ../sass/_mixins.scss */
-  .menu--account .menu a.user:before,
   .menu--main .menu a.user:before {
     opacity: 1;
     text-indent: 0%;
@@ -2122,7 +2114,6 @@ body.toolbar-tray-open.toolbar-vertical.toolbar-fixed {
   }
 
   /* line 146, ../sass/components/_navigation.scss */
-  header .menu--account .menu,
   header .menu--main .menu {
     padding-top: 2.5rem;
   }
@@ -2346,7 +2337,38 @@ body.toolbar-tray-open.toolbar-vertical.toolbar-fixed {
     justify-content: flex-end;
   }
 }
-/* line 19, ../sass/components/_navigation-user.scss */
+@media (min-width: 992px) {
+  /* line 14, ../sass/components/_navigation-user.scss */
+  #block-clarity-useraccountmenu {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  /* line 21, ../sass/components/_navigation-user.scss */
+  #block-clarity-useraccountmenu > .menu {
+    display: flex;
+    text-transform: uppercase;
+    font-size: .875em;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+  /* line 5, ../sass/_mixins.scss */
+  #block-clarity-useraccountmenu > .menu li {
+    /* A simple method to get navigation links to appear in one line. */
+    padding: 0;
+    /* LTR */
+    margin: 0;
+    list-style-type: none;
+  }
+  /* line 29, ../sass/components/_navigation-user.scss */
+  #block-clarity-useraccountmenu > .menu a {
+    display: block;
+    padding: 5px 10px;
+  }
+}
+
+/* line 41, ../sass/components/_navigation-user.scss */
 #user-menu-header .field-picture {
   width: 32px;
   height: 32px;
@@ -2354,25 +2376,25 @@ body.toolbar-tray-open.toolbar-vertical.toolbar-fixed {
   overflow: hidden;
   margin-top: -7px;
 }
-/* line 25, ../sass/components/_navigation-user.scss */
+/* line 47, ../sass/components/_navigation-user.scss */
 #user-menu-header .field-picture img {
   display: block;
 }
-/* line 30, ../sass/components/_navigation-user.scss */
+/* line 52, ../sass/components/_navigation-user.scss */
 #user-menu-header .user-name {
   display: flex;
 }
-/* line 34, ../sass/components/_navigation-user.scss */
+/* line 56, ../sass/components/_navigation-user.scss */
 #user-menu-header .field-name {
   margin-right: 10px;
 }
-/* line 37, ../sass/components/_navigation-user.scss */
+/* line 59, ../sass/components/_navigation-user.scss */
 #user-menu-header li {
   padding: 20px;
 }
 
 @media (min-width: 992px) {
-  /* line 45, ../sass/components/_navigation-user.scss */
+  /* line 67, ../sass/components/_navigation-user.scss */
   #user-menu-header {
     margin: 0;
     padding: 0;
@@ -2389,11 +2411,11 @@ body.toolbar-tray-open.toolbar-vertical.toolbar-fixed {
     margin: 0;
     list-style-type: none;
   }
-  /* line 53, ../sass/components/_navigation-user.scss */
+  /* line 75, ../sass/components/_navigation-user.scss */
   #user-menu-header li {
     padding: 10px;
   }
-  /* line 60, ../sass/components/_navigation-user.scss */
+  /* line 82, ../sass/components/_navigation-user.scss */
   #user-menu-header a {
     color: #464646;
   }
@@ -3288,7 +3310,12 @@ body.path-frontpage main .view-id-stakeholders {
   transform: translate(0px, 0px);
 }
 
-/* line 5, ../sass/views/_views-step-data.scss */
+/* line 9, ../sass/views/_views-step-data.scss */
+.view-step-data-collection .group-level-0 {
+  float: left;
+}
+
+/* line 21, ../sass/views/_views-step-data.scss */
 #edit-group-contexts--content > .field,
 #edit-group-data--content > .field,
 .none > .field {
@@ -3299,39 +3326,39 @@ body.path-frontpage main .view-id-stakeholders {
   padding: 5px;
   margin-bottom: 1.5rem;
 }
-/* line 12, ../sass/views/_views-step-data.scss */
+/* line 28, ../sass/views/_views-step-data.scss */
 #edit-group-contexts--content > .field h4,
 #edit-group-data--content > .field h4,
 .none > .field h4 {
   text-align: right;
   margin: 0;
 }
-/* line 16, ../sass/views/_views-step-data.scss */
+/* line 32, ../sass/views/_views-step-data.scss */
 #edit-group-contexts--content > .field ul,
 #edit-group-data--content > .field ul,
 .none > .field ul {
   margin: 0;
 }
 
-/* line 42, ../sass/views/_views-step-data.scss */
+/* line 58, ../sass/views/_views-step-data.scss */
 .view-step-data-collection .group-level-2 .grouped-content {
   clear: both;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 5px 20px;
 }
-/* line 52, ../sass/views/_views-step-data.scss */
+/* line 68, ../sass/views/_views-step-data.scss */
 .view-step-data-collection .group-level-2 .grouped-content > .show-in-preview {
   grid-column: span 3;
   font-weight: 600;
   text-transform: uppercase;
 }
-/* line 61, ../sass/views/_views-step-data.scss */
+/* line 77, ../sass/views/_views-step-data.scss */
 .view-step-data-collection .group-level-2 .grouped-content .views-field-title {
   margin-bottom: 5px;
   font-size: .875em;
 }
-/* line 65, ../sass/views/_views-step-data.scss */
+/* line 81, ../sass/views/_views-step-data.scss */
 .view-step-data-collection .group-level-2 .grouped-content .views-field-title div {
   background: rgba(255, 255, 255, 0.7);
   padding: 5px 10px;
@@ -3342,12 +3369,12 @@ body.path-frontpage main .view-id-stakeholders {
   padding-left: 49px;
   position: relative;
 }
-/* line 75, ../sass/views/_views-step-data.scss */
+/* line 91, ../sass/views/_views-step-data.scss */
 .view-step-data-collection .group-level-2 .grouped-content .views-field-title div.active {
   background: #0b7dbd;
   color: white;
 }
-/* line 81, ../sass/views/_views-step-data.scss */
+/* line 97, ../sass/views/_views-step-data.scss */
 .view-step-data-collection .group-level-2 .grouped-content .views-field-title div:before {
   font-family: iconos;
   content: "\e909";
@@ -3356,23 +3383,23 @@ body.path-frontpage main .view-id-stakeholders {
   left: 3px;
   font-size: 29px;
 }
-/* line 92, ../sass/views/_views-step-data.scss */
+/* line 108, ../sass/views/_views-step-data.scss */
 .view-step-data-collection .group-level-2 .grouped-content .tax-summer-days .views-field-title div:before {
   content: "\e908";
 }
-/* line 96, ../sass/views/_views-step-data.scss */
+/* line 112, ../sass/views/_views-step-data.scss */
 .view-step-data-collection .group-level-2 .grouped-content .tax-hot-days .views-field-title div:before {
   content: "\e907";
 }
-/* line 100, ../sass/views/_views-step-data.scss */
+/* line 116, ../sass/views/_views-step-data.scss */
 .view-step-data-collection .group-level-2 .grouped-content .tax-heat-wave .views-field-title div:before {
   content: "\e906";
 }
-/* line 104, ../sass/views/_views-step-data.scss */
+/* line 120, ../sass/views/_views-step-data.scss */
 .view-step-data-collection .group-level-2 .grouped-content .tax-heat-wave-duration .views-field-title div:before {
   content: "\e90a";
 }
-/* line 111, ../sass/views/_views-step-data.scss */
+/* line 127, ../sass/views/_views-step-data.scss */
 .view-step-data-collection .tabbable ul.nav-tabs {
   margin: 0;
   padding: 0;
@@ -3387,7 +3414,7 @@ body.path-frontpage main .view-id-stakeholders {
   margin: 0;
   list-style-type: none;
 }
-/* line 115, ../sass/views/_views-step-data.scss */
+/* line 131, ../sass/views/_views-step-data.scss */
 .view-step-data-collection .tabbable ul.nav-tabs li a {
   background: white;
   display: block;
@@ -3395,23 +3422,23 @@ body.path-frontpage main .view-id-stakeholders {
   border: 1px solid #0b7dbd;
   border-right: none;
 }
-/* line 123, ../sass/views/_views-step-data.scss */
+/* line 139, ../sass/views/_views-step-data.scss */
 .view-step-data-collection .tabbable ul.nav-tabs li:first-of-type a {
   border-radius: 6px 0 0 0;
 }
-/* line 126, ../sass/views/_views-step-data.scss */
+/* line 142, ../sass/views/_views-step-data.scss */
 .view-step-data-collection .tabbable ul.nav-tabs li:last-of-type a {
   border-radius: 0 6px 0 0;
   border-right: 1px solid #0b7dbd;
 }
 
-/* line 145, ../sass/views/_views-step-data.scss */
+/* line 161, ../sass/views/_views-step-data.scss */
 #edit-group-general--content .field--name-field-contributors .item-list > ul {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   grid-gap: 30px;
 }
-/* line 153, ../sass/views/_views-step-data.scss */
+/* line 169, ../sass/views/_views-step-data.scss */
 #edit-group-general--content .field--name-field-contributors .item-list > ul li {
   background: white;
   border: 1px solid #0b7dbd;
@@ -3420,13 +3447,13 @@ body.path-frontpage main .view-id-stakeholders {
   box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
 }
 @media (min-width: 768px) {
-  /* line 164, ../sass/views/_views-step-data.scss */
+  /* line 180, ../sass/views/_views-step-data.scss */
   #edit-group-general--content .col-sm-1, #edit-group-general--content .col-sm-2, #edit-group-general--content .col-sm-3, #edit-group-general--content .col-sm-4, #edit-group-general--content .col-sm-5, #edit-group-general--content .col-sm-6, #edit-group-general--content .col-sm-7, #edit-group-general--content .col-sm-8, #edit-group-general--content .col-sm-9, #edit-group-general--content .col-sm-10, #edit-group-general--content .col-sm-11, #edit-group-general--content .col-sm-12 {
     float: none;
   }
 }
 
-/* line 176, ../sass/views/_views-step-data.scss */
+/* line 192, ../sass/views/_views-step-data.scss */
 #edit-group-contexts > div > .field,
 #edit-group-data > div > .field {
   display: grid;
@@ -3437,13 +3464,13 @@ body.path-frontpage main .view-id-stakeholders {
   background: rgba(255, 255, 255, 0.7);
   margin-bottom: 10px;
 }
-/* line 185, ../sass/views/_views-step-data.scss */
+/* line 201, ../sass/views/_views-step-data.scss */
 #edit-group-contexts > div > .field h4,
 #edit-group-data > div > .field h4 {
   text-align: right;
   margin: 0;
 }
-/* line 189, ../sass/views/_views-step-data.scss */
+/* line 205, ../sass/views/_views-step-data.scss */
 #edit-group-contexts > div > .field ul,
 #edit-group-data > div > .field ul {
   margin-top: 0;
