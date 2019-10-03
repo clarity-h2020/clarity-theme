@@ -1,31 +1,14 @@
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.view {
+  fieldset {
+    legend {
+      font-size:2em;
+      color:$bk;
+      // font-weight:bold;
+    }
+  }
+}
 
 
 
@@ -49,7 +32,8 @@ main .views-element-container{
 .view a {
   text-decoration:none;
   // font-weight:600;
-  color:$bk_2;
+  // color:$bk_2;
+  color:$bk;
   
 }
 

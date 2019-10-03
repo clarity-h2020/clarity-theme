@@ -1,0 +1,67 @@
+#tabs {
+    $border:1px solid $bk;
+    $back:$bk_1_2;
+    $back:transparentize(white,.4);
+    $text:$general;
+    .ui-tabs-nav {
+        @include reset-list();
+        margin-top:1.5rem;
+        display:flex;
+        
+        
+       
+        a {
+            text-decoration:none;
+            display:block;
+            // background:white;
+            color:$general;
+            padding:5px 10px;
+            border: $border;
+            border-bottom:none;
+            outline:none;
+            font-weight:600;
+
+            &:hover {
+                background:$bk_1;
+                color:white;
+            }
+            
+            
+        }
+        li.ui-state-active a {
+            // background:$bk;
+            // background:$bk_2;
+            // color:white;
+            background:$back;
+            color:$text;
+        }
+        li:not(:last-of-type) {
+            a {
+                border-right:none;
+            }
+            
+        }
+        li:first-of-type {
+            a {
+                border-radius:6px 0 0 0;
+            }
+            
+        }
+        li:last-of-type {
+            a {
+                border-radius:0 6px 0 0;
+            }
+            
+        }
+    }
+    .ui-tabs-panel {
+        padding:1.5rem;
+        margin-top:-2px;
+        background:$back;
+        border:$border;
+        color:$text;
+        a {
+            color:$text;
+        }
+    }
+}

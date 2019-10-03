@@ -8,8 +8,12 @@ main {
 body.path-study {
     main {
         max-width:100%;
-        padding-right:3em;
-        padding-left:3em;
+        // padding-right:30px;
+        // padding-left:30px;
+        @media (min-width:$device + 60 ) {
+            // padding-right:0px;
+        // padding-left:0px;
+        }
     }
     .block-system-main-block {
         max-width:$device_max;

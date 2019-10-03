@@ -12,6 +12,7 @@ global-scripts:
   dependencies:
     - core/jquery
     - core/jquery.once
+    - core/jquery.ui.tabs
     - core/drupal
     - core/drupal.ajax
     - core/drupalSettings

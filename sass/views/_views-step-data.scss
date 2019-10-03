@@ -1,0 +1,240 @@
+
+
+
+
+
+
+.view-step-data-collection {
+    
+    .group-level-0 {
+        .show-in-preview,
+        h4,
+        h3,
+        h2 {
+            margin:.5rem 0;
+            font-size:1em;
+            display:block;
+        }
+        h2 {
+            text-transform:uppercase;
+        }
+       
+        .grouped-content {
+            padding-left:1rem;
+
+        }
+        & > .grouped-content,
+        & > .group-title {
+            // float:left;
+        }
+    }
+    .group-level-2 {
+        .group-title,
+        .grouped-content {
+            // clear:both;
+        }
+        .show-in-preview {
+            // font-size:.875em;
+        }
+    }
+}
+
+
+
+
+#edit-group-contexts--content,
+// #edit-group-general--content,
+#edit-group-data--content,
+.none {
+    & >     .field {
+        display:grid;
+        grid-template-columns:12em 1fr;
+        grid-gap: 20px;
+        background:white;
+        padding:5px;
+        margin-bottom:1.5rem;
+        h4 {
+            text-align:right;
+            margin:0;
+        }
+        ul {
+            margin:0;
+        }
+
+    }
+}
+
+
+.view-step-data-collection {
+    
+    .group-level-0 {
+        // float:left;
+        
+        // background:transparentize(red,.5);
+        // .group-title {
+        //     float:left;
+        // }
+        // h2, h3, h4 {
+        //     padding:5px 10px;
+        //     margin:0;
+        //     line-height:2rem;
+        // }
+        // h3, h4 {
+        //     &:before {
+        //         content:"> ";
+        //     }
+        // }
+    }
+    .group-level-2 .grouped-content {
+        clear:both;
+        // display:grid;
+        
+        // grid-template-columns: repeat(3, 1fr);
+
+        // grid-gap: 5px 20px;
+        // border:2px solid red;
+        // padding:1em;
+
+        & > .show-in-preview {
+            // display:none;
+            grid-column:span 3;
+            font-weight:600;
+            text-transform:uppercase;
+
+
+        }
+        $icono:24px;
+        .views-field-title {
+            margin-bottom:5px;
+            font-size:.875em;
+          
+            div {
+                // margin:1em;
+                background:transparentize(white,.3);
+                
+                
+                padding:5px 10px;
+                border:1px solid $bk;
+                border-radius:6px;
+                cursor:pointer;
+                overflow:hidden;
+                &.active {
+                    background:$bk;
+                    color:white;
+                }
+                padding-left:$icono + 10;
+                position:relative;
+                &:before {
+                    font-family:iconos;
+                    content:"\e909";
+                    position:absolute;
+                    top:0px;
+                    left:3px;
+                    font-size:$icono;
+                }
+
+            }
+        }
+        .tax-summer-days .views-field-title div:before {
+
+            content:"\e908";
+        }
+        .tax-hot-days .views-field-title div:before {
+
+            content:"\e907";
+        }
+        .tax-heat-wave .views-field-title div:before {
+
+            content:"\e906";
+        }
+        .tax-heat-wave-duration .views-field-title div:before {
+
+            content:"\e90a";
+            
+        }
+    }
+    .tabbable {
+        ul.nav-tabs  {
+            @include reset-list();
+            display:flex;
+            li {
+                a {
+                    background:white;
+                    display:block;
+                    padding:5px 10px;
+                    border:1px solid $bk;
+                    border-right:none;
+
+                }
+                &:first-of-type a {
+                    border-radius:6px 0 0 0;
+                }
+                &:last-of-type a {
+                    border-radius:0 6px 0 0;
+                    border-right:1px solid $bk;
+                }
+
+            }
+        }
+    }
+    
+    
+}
+
+#edit-group-general--content {
+
+
+    // background:red;
+    .field--name-field-contributors {
+        .item-list {
+           
+            & > ul {
+                
+                
+                 display:grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        // grid-template-columns: repeat(2, 1fr);
+
+        grid-gap: 30px;
+        li {
+            // background:transparentize(white,.3);
+            @include white-box();
+            
+            // border:1px solid transparentize(white,.5);
+            // background:transparentize($bk_1_3,.5);
+        }
+            }
+        }
+    }
+    @media (min-width: 768px) {
+        .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
+            float:none;
+        }
+    }
+
+    
+}
+// #edit-group-general
+#edit-group-contexts,
+#edit-group-data  {
+    // background:black;
+    // padding:2em;
+    & > div > .field {
+        display:grid;
+        grid-template-columns:12rem 1fr;
+        grid-gap: 30px;
+        background:$gris_80;
+        padding:10px;
+        background:transparentize(white,.3);
+        margin-bottom:10px;
+        
+        h4 {
+            text-align:right;
+            margin:0;
+        }
+        ul {
+            margin-top:0;
+        }
+    }
+
+}

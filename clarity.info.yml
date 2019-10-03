@@ -11,6 +11,15 @@ libraries-override:
       css:
         component:
           css/components/menu.css: false
+    core/jquery.ui:
+      css:
+        theme:
+          assets/vendor/jquery.ui/themes/base/theme.css: false
+    core/jquery.ui.tabs:
+      css:
+        component:
+          assets/vendor/jquery.ui/themes/base/tabs.css: false
+          assets/vendor/jquery.ui/themes/base/accordion.css: false
 regions:
   header: Header
   title_heading: 'Title Heading'

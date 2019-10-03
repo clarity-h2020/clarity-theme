@@ -10,21 +10,26 @@
 @import "components/front";
 @import "components/blocks";
 @import "components/navigation";
+@import "components/tabs";
 
 @import "components/navigation-second";
 @import "components/navigation-user";
 @import "components/navigation-footer";
 
 
-@import "components/views";
-@import "components/views-grid";
-@import "components/views-table";
-@import "components/views-slideshow";
-@import "components/views-trial";
-@import "components/views-trials";
-@import "components/views-partners";
-@import "components/views-stake";
-@import "components/views-map";
+@import "views/views";
+@import "views/views-grid";
+@import "views/views-table";
+@import "views/views-slideshow";
+@import "views/views-trial";
+@import "views/views-trials";
+@import "views/views-partners";
+@import "views/views-stake";
+@import "views/views-map";
+@import "views/views-step-data";
+
+
+
 @import "components/navigation-pills";
 @import "components/slideshow";
 
