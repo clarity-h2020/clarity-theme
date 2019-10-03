@@ -17,22 +17,9 @@ global-scripts:
     - core/drupalSettings
 
 # Entity print custom css files
-print-gl_step:
+pdf_print:
   css:
     theme:
-      css/print-gl_step.css: {}
+      css/pdf_print.css: {}
 
-print-all-nodes:
-  css:
-    theme:
-      css/print-all-nodes.css: {}
 
-print-study:
-  css:
-    theme:
-      css/print-study.css: {}
-
-print-all-groups:
-  css:
-    theme:
-      css/print-all-groups.css: {}

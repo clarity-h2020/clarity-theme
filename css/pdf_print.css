@@ -1,0 +1,38 @@
+/* line 1, ../sass/_pdf_styling.scss */
+body {
+  font-family: "DejaVu Sans", Helvetica, Arial, sans-serif;
+}
+
+/* line 5, ../sass/_pdf_styling.scss */
+.page {
+  padding: 20px;
+}
+
+/* line 9, ../sass/_pdf_styling.scss */
+.page img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* line 14, ../sass/_pdf_styling.scss */
+.page td img {
+  max-width: none;
+}
+
+@page {
+  margin: 50px 25px 100px 25px;
+}
+/* line 22, ../sass/_pdf_styling.scss */
+#footer {
+  position: fixed;
+  bottom: -60px;
+  left: 0px;
+  right: 0px;
+  background-color: #ffffff;
+  height: 50px;
+}
+
+/* line 31, ../sass/_pdf_styling.scss */
+#footer .page:after {
+  content: counter(page,decimal);
+}
