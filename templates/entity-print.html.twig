@@ -4,12 +4,12 @@
     <title>Study Report{# title #}</title>
     {{ entity_print_css }}
   </head>
-  <body>
-    <div id="footer">
-      <p class="page"></p>
-    </div>
+  <body class="pdf-print">
+    <!-- Here we could add some sort of cover page. Question is, how we could
+    display it even before the TOC, which is automatically generated and moved
+    to the very top of the document by wkhtmltopdf? -->
 
-    <div class="page pdf-print">
+    <div class="page">
       {{ content }}
     </div>
   </body>

@@ -1,33 +1,125 @@
-body {
-  font-family: "DejaVu Sans", Helvetica, Arial, sans-serif;
-}
+body.pdf-print {
+  font-family: "Times New Roman", Helvetica, Arial, sans-serif;
+  color: #000;
 
-.page {
-  padding: 20px;
-}
+  h3 {
+    font-size:1.2em;
+  }
 
-.page img {
-  max-width: 100%;
-  height: auto;
-}
+  h4 {
+    font-size:1.1em;
+  }
 
-.page td img {
-  max-width: none;
-}
+  h5 {
+    font-size:1.05em;
+    line-height: 0;
+  }
 
-@page {
-  margin: 50px 25px 100px 25px;
-}
+  h6 {
+    font-size:1.05em;
+    line-height: 0;
+  }
 
-#footer {
-  position: fixed;
-  bottom: -60px;
-  left: 0px;
-  right: 0px;
-  background-color: #ffffff;
-  height: 50px;
-}
+  section {
+    padding-bottom: 20px;
+  }
 
-#footer .page:after {
-  content: counter(page, decimal);
+  section.study-presets {
+    padding-bottom: 1px;
+  }
+
+  .field__label {
+    font-weight: bold;
+  }
+
+  .field--label-inline .field__label, .field--label-inline > .field__item, .field--label-inline .field__items {
+      padding-right: 0.5em;
+  }
+
+  .field--label-inline .field__label, .field--label-inline .field__items {
+    float: left;
+  }
+
+  .field--label-inline .field__label::after {
+    content: ":";
+  }
+
+  .page {
+    padding: 20px;
+  }
+
+/* styling for report images */
+  .view-report-summary-images .views-field-title {
+    margin-bottom: 5px;
+  }
+
+  .views-field-field-comment .field-content p {
+    margin-top: 0;
+  }
+
+/* styling included data (adaptation options, twins, showcases, vulnerabilities */
+  .item-entity {
+    padding-bottom: 20px;
+    .node--type-adaptation-options {
+      overflow: auto;
+
+      h5 {
+        margin: 24px 0 16px;
+      }
+
+      ul {
+        margin-top: 8px;
+      }
+    }
+
+    .field__label {
+      font-weight: initial;
+    }
+
+    .group-left {
+      float: left;
+      width: 50%;
+    }
+    .group-right {
+      float: left;
+      width: 50%;
+      padding-top: 44px;
+    }
+  }
+
+  /* styling data package contributors*/
+  .node--type-dp-contributors {
+    padding-top: 10px;
+    padding-bottom: 20px;
+  }
+
+  .paragraph {
+    .field--label-inline .field__label, .field--label-inline .field__items {
+    float: initial;
+  }
+  }
+
+  .page img {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid $bk_1;
+  }
+
+  .page td img {
+    max-width: none;
+  }
+
+  .hide-in-print {
+    display: none;
+  }
+
+  .print-break {
+    page-break-before: always;
+    break-before: always;
+  }
+
+  .node--type-data-package-metadata {
+    padding-bottom: 10px;
+  }
+
 }

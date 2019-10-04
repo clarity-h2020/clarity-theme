@@ -1,38 +1,184 @@
-/* line 1, ../sass/_pdf_styling.scss */
+@font-face {
+  font-family: 'iconos';
+  src: url("../fonts/fonts/icomoon.eot");
+  src: url("../fonts/fonts/icomoon.eot?#iefix") format("embedded-opentype"), url("../fonts/fonts/icomoon.woff") format("woff"), url("../fonts/fonts/icomoon.ttf") format("truetype"), url("../fonts/fonts/icomoon.svg#iconosRegular") format("svg");
+}
+/* line 17, ../sass/_init.scss */
+a:before,
+.block-header h2:before,
+.btn:before {
+  font-family: iconos;
+  padding: 0 0.6em 0 0;
+  line-height: 1em;
+  font-weight: normal;
+}
+
+/* line 26, ../sass/_init.scss */
+.vertical-list .item:after {
+  font-family: iconos;
+}
+
+/* line 40, ../sass/_init.scss */
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 46, ../sass/_init.scss */
 body {
-  font-family: "DejaVu Sans", Helvetica, Arial, sans-serif;
+  font-family: 'open sans',sans-serif;
+  width: 100%;
+  line-height: 1.4;
+  color: #464646;
 }
 
-/* line 5, ../sass/_pdf_styling.scss */
-.page {
-  padding: 20px;
-}
-
-/* line 9, ../sass/_pdf_styling.scss */
-.page img {
+/* line 52, ../sass/_init.scss */
+svg,
+img {
   max-width: 100%;
   height: auto;
 }
 
-/* line 14, ../sass/_pdf_styling.scss */
-.page td img {
+/* line 58, ../sass/_init.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+/* line 62, ../sass/_init.scss */
+h1 {
+  font-size: 2em;
+  font-weight: normal;
+}
+
+/* line 68, ../sass/_init.scss */
+h2 {
+  font-size: 1.4em;
+}
+
+/* line 1, ../sass/_pdf_styling.scss */
+body.pdf-print {
+  font-family: "Times New Roman", Helvetica, Arial, sans-serif;
+  color: #000;
+  /* styling for report images */
+  /* styling included data (adaptation options, twins, showcases, vulnerabilities */
+  /* styling data package contributors*/
+}
+/* line 5, ../sass/_pdf_styling.scss */
+body.pdf-print h3 {
+  font-size: 1.2em;
+}
+/* line 9, ../sass/_pdf_styling.scss */
+body.pdf-print h4 {
+  font-size: 1.1em;
+}
+/* line 13, ../sass/_pdf_styling.scss */
+body.pdf-print h5 {
+  font-size: 1.05em;
+  line-height: 0;
+}
+/* line 18, ../sass/_pdf_styling.scss */
+body.pdf-print h6 {
+  font-size: 1.05em;
+  line-height: 0;
+}
+/* line 23, ../sass/_pdf_styling.scss */
+body.pdf-print section {
+  padding-bottom: 20px;
+}
+/* line 27, ../sass/_pdf_styling.scss */
+body.pdf-print section.study-presets {
+  padding-bottom: 1px;
+}
+/* line 31, ../sass/_pdf_styling.scss */
+body.pdf-print .field__label {
+  font-weight: bold;
+}
+/* line 35, ../sass/_pdf_styling.scss */
+body.pdf-print .field--label-inline .field__label, body.pdf-print .field--label-inline > .field__item, body.pdf-print .field--label-inline .field__items {
+  padding-right: 0.5em;
+}
+/* line 39, ../sass/_pdf_styling.scss */
+body.pdf-print .field--label-inline .field__label, body.pdf-print .field--label-inline .field__items {
+  float: left;
+}
+/* line 43, ../sass/_pdf_styling.scss */
+body.pdf-print .field--label-inline .field__label::after {
+  content: ":";
+}
+/* line 47, ../sass/_pdf_styling.scss */
+body.pdf-print .page {
+  padding: 20px;
+}
+/* line 52, ../sass/_pdf_styling.scss */
+body.pdf-print .view-report-summary-images .views-field-title {
+  margin-bottom: 5px;
+}
+/* line 56, ../sass/_pdf_styling.scss */
+body.pdf-print .views-field-field-comment .field-content p {
+  margin-top: 0;
+}
+/* line 61, ../sass/_pdf_styling.scss */
+body.pdf-print .item-entity {
+  padding-bottom: 20px;
+}
+/* line 63, ../sass/_pdf_styling.scss */
+body.pdf-print .item-entity .node--type-adaptation-options {
+  overflow: auto;
+}
+/* line 66, ../sass/_pdf_styling.scss */
+body.pdf-print .item-entity .node--type-adaptation-options h5 {
+  margin: 24px 0 16px;
+}
+/* line 70, ../sass/_pdf_styling.scss */
+body.pdf-print .item-entity .node--type-adaptation-options ul {
+  margin-top: 8px;
+}
+/* line 75, ../sass/_pdf_styling.scss */
+body.pdf-print .item-entity .field__label {
+  font-weight: initial;
+}
+/* line 79, ../sass/_pdf_styling.scss */
+body.pdf-print .item-entity .group-left {
+  float: left;
+  width: 50%;
+}
+/* line 83, ../sass/_pdf_styling.scss */
+body.pdf-print .item-entity .group-right {
+  float: left;
+  width: 50%;
+  padding-top: 44px;
+}
+/* line 91, ../sass/_pdf_styling.scss */
+body.pdf-print .node--type-dp-contributors {
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+/* line 97, ../sass/_pdf_styling.scss */
+body.pdf-print .paragraph .field--label-inline .field__label, body.pdf-print .paragraph .field--label-inline .field__items {
+  float: initial;
+}
+/* line 102, ../sass/_pdf_styling.scss */
+body.pdf-print .page img {
+  max-width: 100%;
+  height: auto;
+  border: 2px solid #325197;
+}
+/* line 108, ../sass/_pdf_styling.scss */
+body.pdf-print .page td img {
   max-width: none;
 }
-
-@page {
-  margin: 50px 25px 100px 25px;
+/* line 112, ../sass/_pdf_styling.scss */
+body.pdf-print .hide-in-print {
+  display: none;
 }
-/* line 22, ../sass/_pdf_styling.scss */
-#footer {
-  position: fixed;
-  bottom: -60px;
-  left: 0px;
-  right: 0px;
-  background-color: #ffffff;
-  height: 50px;
+/* line 116, ../sass/_pdf_styling.scss */
+body.pdf-print .print-break {
+  page-break-before: always;
+  break-before: always;
 }
-
-/* line 31, ../sass/_pdf_styling.scss */
-#footer .page:after {
-  content: counter(page,decimal);
+/* line 121, ../sass/_pdf_styling.scss */
+body.pdf-print .node--type-data-package-metadata {
+  padding-bottom: 10px;
 }
