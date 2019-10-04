@@ -59,7 +59,7 @@ h2 {
 
 /* line 1, ../sass/_pdf_styling.scss */
 body.pdf-print {
-  font-family: "Times New Roman", Helvetica, Arial, sans-serif;
+  font-family: "Times New Roman", Times, serif;
   color: #000;
   /* styling for report images */
   /* styling included data (adaptation options, twins, showcases, vulnerabilities */
