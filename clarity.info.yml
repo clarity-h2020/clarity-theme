@@ -35,3 +35,7 @@ regions:
   help: Help
   user_menu: 'User menu'
 
+entity_print:
+  all: 'clarity/pdf_print'
+
+

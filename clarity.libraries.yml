@@ -16,3 +16,11 @@ global-scripts:
     - core/drupal
     - core/drupal.ajax
     - core/drupalSettings
+
+# Entity print custom css files
+pdf_print:
+  css:
+    theme:
+      css/pdf_print.css: {}
+
+
