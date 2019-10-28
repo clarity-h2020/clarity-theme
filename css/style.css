@@ -4215,6 +4215,14 @@ article.node--view-mode-teaser .field--name-field-image {
   color: #464646;
 }
 
+/* line 74, ../sass/components/_fields.scss */
+.field--name-body a {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  word-break: break-word;
+  hyphens: auto;
+}
+
 /* line 1, ../sass/components/_edit.scss */
 .js .field--widget-entity-reference-paragraphs .tabledrag-handle .handle {
   margin-left: 0;
