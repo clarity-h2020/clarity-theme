@@ -64,7 +64,25 @@
     }
 }
 
-
+.view-step-data-collection-2 {
+    // backgrosund:cyan;
+    .show-in-preview {
+        background:transparentize(white,.3);
+                
+                
+        padding:5px 10px;
+        border:1px solid $bk;
+        border-radius:6px;
+        cursor:pointer;
+        overflow:hidden;
+        margin-bottom:5px;
+        font-size:.875em;
+        &.active {
+            background:$bk;
+            color:white;
+        }
+    }
+}
 .view-step-data-collection {
     
     .group-level-0 {
