@@ -171,13 +171,25 @@
   }
 }
 
+nav.tabs {
+  // overflow:hidden;
+  @include clear();
+}
+.region-content {
+  // clear:both;
+  .block {
+    clear:both;
+  }
+}
 
-.tabs {
+
+.tabs.primary {
   // background:$gris_90;
   
   // font-size:.875em;
   font-size:14px;
   display:flex;
+  flex-wrap: wrap;
   li {
     margin:0;
     &:first-of-type {
@@ -203,12 +215,17 @@
   }
   a {
     color:$claro;
-    float:left;
+    // float:left;
     // background:$gris_95;
     // border:1px solid red;
     border-top:1px solid $gris_80;
     border-bottom:1px solid $gris_70;
     border-right:1px solid $gris_80;
+    &:hover,
+    &:focus {
+      background:white;
+      color:black;
+    }
     
   }
   
@@ -279,31 +296,6 @@ a.btn {
 }
 
 
-h1.page-title {
-  
-
-  text-align:center;
-  padding:1.5em 0 .3em;
-  margin-top:0;
-  margin-bottom:.5rem;
-  
-  
-  a {
-    color:white;
-    border-bottom:1px solid transparentize(white,.7);
-    text-decoration:none;
-    &:hover {
-      border-bottom:2px solid white;
-    }
-  }
-  
-}
-body.path-group,
-body.path-gt {
-  h1.page-title {
-    background-image:url(../images/header-trials.jpg);
-  }
-}
 
 
 

@@ -51,6 +51,8 @@ main,
   margin-left:auto;
   // background:$gris_80;
 }
+
+
 body.path-adaptation-options-overview-list,
 body.path-category,
 body.path-partners,
@@ -68,6 +70,15 @@ body.path-all-trials-wide {
   }
   
   
+}
+
+body.path-frontpage {
+  padding:0;
+  main {
+    max-width:100%;
+    // background:red;
+   
+  }
 }
 
 .region-primary-menu {
@@ -91,82 +102,65 @@ main {
   body:not(.path-frontpage) {
     main {
       display: grid;
-      grid-template-columns: repeat(12, 1fr);
-      grid-gap: 20px;
+      grid-template-columns:repeat(12, 1fr);
+      grid-template-columns:1fr;
+      grid-gap: 30px;
       max-width:$device_max;
       margin:0 auto;
     }
     .layout-content {
-      grid-column:span 12;
+      // grid-column:span 12;
 
    }
    .layout-sidebar-first {
     
-     grid-column:span 2 ;
+    //  grid-column:span 2 ;
 
    }
    .layout-sidebar-second {
      
-      grid-column:span 2 ;
+      // grid-column:span 2 ;
 
     }
   }
 
-  body.body-sidebar-first:not(.path-frontpage) {
+  body.body-sidebar-first {
    
-    
-    
-    .layout-content {
-       grid-column:span 10;
-
+    main {
+      grid-template-columns:280px 1fr;
+      // background:cyan;
     }
+    
+   
     .layout-sidebar-first {
      order: -1;
-      grid-column:span 2 ;
+      // grid-column:span 3 ;
 
     }
-    .layout-sidebar-second {
-      
-       grid-column:span 2 ;
- 
-     }
+  
     
-    &.path-group {
-     .layout-content {
-       grid-column: 3 / span 11;
 
-      }
-    }
   }
   
-  body.body-sidebar-second:not(.path-frontpage) {
-    .layout-content {
-      grid-column:span 10;
+  body.body-sidebar-second {
+    main {
+      grid-template-columns:1fr 280px;
+      // background:pink;
+    }
+   
+  }
+  body.body-two-sidebars {
+    main {
+      grid-template-columns:220px 1fr 220px;
+      // background:$gris_90;
+    }
+    
+   .layout-sidebar-first {
+    order: -1;
+    //  grid-column:span 2 ;
 
    }
  
-   .layout-sidebar-second {
-     
-      grid-column:span 2 ;
-
-    }
-  }
-  body.body-two-sidebars:not(.path-frontpage) {
-    
-    .layout-content {
-      grid-column:span 8;
-
-   }
-   .layout-sidebar-first {
-    order: -1;
-     grid-column:span 2 ;
-
-   }
-   .layout-sidebar-second {
-     
-      grid-column:span 2 ;
-
-    }
     
   }
   

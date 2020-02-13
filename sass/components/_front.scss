@@ -1,0 +1,124 @@
+
+
+body.path-frontpage {
+    .views_slideshow_cycle_slide,
+    .views_slideshow_cycle_teaser_section {
+        width:100% !important;
+    }
+    
+
+}
+
+
+.region-front-content {
+    .block {
+        background:$gris_90;
+        .field--name-body {
+            max-width:$device;
+            margin:0 auto;
+        }
+        & > div {
+            max-width: $device;
+            margin:0 auto;
+        }
+    }
+    #block-clarity-views-block-slideshow-block-1  > div {
+        // width:100%;
+    }
+    .block {
+        padding:3rem 0;
+    }
+    .block-header {
+        text-align:center;
+    }
+
+}
+
+#block-ourgoal {
+    background:url(../images/bk_5.jpg);
+    background-size:cover;
+    background-position:center 40%;
+    background-repeat:no-repeat;
+    // background:cyan;
+    padding:1.5rem 0;
+    .field--name-body {
+        // max-width:$device_7;
+        font-size:.9125em;
+        font-weight:600;
+        text-transform:uppercase;
+        text-align:center;
+    }
+
+}
+#block-welcometoclaritycsisclimateservicesinformationsystem {
+    background:$gris_98;
+    ol {
+        @include reset-list();
+
+        display:grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        grid-gap: 30px;
+        background:url(../images/icons/stages.svg) no-repeat;
+        background-position:top center;
+        background-size:60%;
+        padding-top:120px;
+        margin-top:1.5rem;
+strong{
+    display:block;
+    // text-align:center;
+    margin-bottom:1.5rem;
+}
+
+    }
+
+}
+
+
+#block-clarity-views-block-slideshow-block-1 {
+    padding:0;
+    .view-content {
+        padding-bottom:0;
+    }
+    & > div {
+        max-width:100%;
+        width:100%;
+    }
+    img {
+        width:100%;
+        display:block;
+        line-height:0;
+        
+        
+    }
+    a {
+        display:block;
+        // @include absolute();
+        position:relative;
+        &:before {
+            @include absolute();
+            content:"";
+            // width:100%;
+            // height:100%;
+            margin:0;
+            padding:0;
+            line-height:0;
+            background:linear-gradient(to top, transparentize(black, .8), transparent);
+        }
+
+    }
+
+    h3 {
+        position:absolute;
+        bottom:3rem;
+        left:20%;
+        display:inline-block;
+        background:transparentize(black,.3);
+        padding:25px;
+        text-transform:uppercase;
+        color:white;
+    }
+
+
+}
+
+

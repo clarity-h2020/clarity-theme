@@ -6,6 +6,7 @@
 @import "layout/layout";
 @import "components/backgrounds";
 @import "components/pages";
+@import "components/pages-title";
 @import "components/bread";
 @import "components/front";
 @import "components/blocks";
@@ -21,7 +22,7 @@
 @import "views/views";
 @import "views/views-grid";
 @import "views/views-table";
-@import "views/views-slideshow";
+// @import "views/views-slideshow";
 @import "views/views-trial";
 @import "views/views-trials";
 @import "views/views-partners";
@@ -32,7 +33,7 @@
 
 
 @import "components/navigation-pills";
-@import "components/slideshow";
+// @import "components/slideshow";
 
 @import "components/node";
 @import "components/nodes";
