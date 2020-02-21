@@ -4280,6 +4280,14 @@ form .field-multiple-table .field-multiple-drag .tabledrag-handle {
   width: 3em;
 }
 
+/* line 93, ../sass/components/_edit.scss */
+.ui-front.ui-dialog-content.ui-widget-content .ui-autocomplete {
+  background: white;
+  border-color: darkgray;
+  border-width: 1px;
+  border-style: solid;
+}
+
 /* gannt */
 /* line 3, ../sass/components/_graphics.scss */
 .graphic-gannt {
