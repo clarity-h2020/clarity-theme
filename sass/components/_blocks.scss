@@ -2,7 +2,7 @@
   padding:3em 20px;
   margin-bottom:1.5em;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); 
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
   grid-gap: 20px;
   & > * {
     // background:white;
@@ -44,7 +44,7 @@
   .linkedin:before {
     content:"\eac9";
   }
-  
+
   @media(min-width:$device) {
     // position:absolute;
     // top:0;
@@ -53,8 +53,8 @@
     // color:$bk_1;
     // background:red;
   }
-  
-  
+
+
 
   h2 {
     display:none;
@@ -63,7 +63,7 @@
     display:flex;
   }
   .view-user-info {
-    
+
     .user-name,
     .item-list {
       ul {
@@ -76,21 +76,21 @@
           content:"]";
         }
         li {
-          
+
           &:not(:last-of-type) {
             padding-right:5px;
           }
         }
-        
+
       }
-      
+
     }
     .user-name a {
       text-decoration:none;
       &:before {
         content:"\e971";
       }
-      
+
     }
     .views-row {
       display:flex;
@@ -108,9 +108,9 @@
     padding:3px 12px;}
     li a {
       display:blocK;
-      
-    
-  
+
+
+
       // color:$general;
       // background:$gris_95;
     }
@@ -122,33 +122,33 @@
           border-radius:50%;
           width:16px;
           height:16px;
-          
+
           background-position:center;
         }
-  
-      }  
+
+      }
   }
-  
-  
+
+
   .contextual {
     right:-30px;
   }
-  
+
   .help {
     @include replace-text-image();
     margin-left:.5em;
     width:24px;
     height:24px;
     &::before {
-      
+
       background-image:url(../images/icons/help2.svg);
       width:21px;
       height:21px;
       top:3px;
     }
-    
+
   }
-  
+
 }
 
 #block-reboot-account-menu {
@@ -159,7 +159,7 @@
 /*
 #block-views-block-user-info-block-1 {
   // background:red;
-  
+
   // color:$claro;
   a { color:$claro;text-decoration:none;}
   h2 {
@@ -203,12 +203,18 @@
       text-decoration:none;
       display:block;
       padding:2px 0;
-      
+
     }
     li:not(:last-of-type){
       border-bottom:1px solid $gris_80;
-    
+
     }
     padding-bottom:2em;
+  }
+}
+
+#block-views-block-study-group-overview-block-2, #block-views-block-view-mode-for-gl-step-block-1 {
+  .view-content {
+    padding-bottom: 0;
   }
 }

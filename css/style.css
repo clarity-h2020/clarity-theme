@@ -2037,7 +2037,7 @@ body.path-frontpage .views_slideshow_cycle_teaser_section {
 /*
 #block-views-block-user-info-block-1 {
   // background:red;
-  
+
   // color:$claro;
   a { color:$claro;text-decoration:none;}
   h2 {
@@ -2097,6 +2097,11 @@ body.path-frontpage .views_slideshow_cycle_teaser_section {
 /* line 208, ../sass/components/_blocks.scss */
 .block-devel-switch-user .links li:not(:last-of-type) {
   border-bottom: 1px solid #cccccc;
+}
+
+/* line 217, ../sass/components/_blocks.scss */
+#block-views-block-study-group-overview-block-2 .view-content, #block-views-block-view-mode-for-gl-step-block-1 .view-content {
+  padding-bottom: 0;
 }
 
 /* line 1, ../sass/components/_navigation.scss */
