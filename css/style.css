@@ -4288,6 +4288,17 @@ form .field-multiple-table .field-multiple-drag .tabledrag-handle {
   border-style: solid;
 }
 
+/* line 102, ../sass/components/_edit.scss */
+#edit-field-resources-wrapper .ief-row-form td[colspan="5"] {
+  padding: 7px;
+  background: #ededed;
+  border: 2px solid #4d4d4d;
+}
+/* line 108, ../sass/components/_edit.scss */
+#edit-field-resources-wrapper #ief-entity-table-edit-field-resources-entities > tbody > tr.ief-row-entity.even {
+  background: white;
+}
+
 /* gannt */
 /* line 3, ../sass/components/_graphics.scss */
 .graphic-gannt {

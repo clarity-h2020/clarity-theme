@@ -96,3 +96,16 @@ form .field-multiple-table .field-multiple-drag .tabledrag-handle {
   border-width: 1px;
   border-style: solid;
 }
+
+#edit-field-resources-wrapper {
+  .ief-row-form {
+    td[colspan="5"] {
+      padding: 7px;
+      background: $gris_93;
+      border: 2px solid $gris_30;
+    }
+  }
+  & #ief-entity-table-edit-field-resources-entities>tbody>tr.ief-row-entity.even {
+    background: white;
+  }
+}
