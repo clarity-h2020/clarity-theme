@@ -1737,16 +1737,28 @@ body.path-frontpage .views_slideshow_cycle_teaser_section {
   max-width: 992px;
   margin: 0 auto;
 }
+<<<<<<< HEAD
 /* line 30, ../sass/components/_front.scss */
 .region-front-content .block {
   padding: 3rem 0;
 }
 /* line 47, ../sass/components/_front.scss */
+=======
+/* line 28, ../sass/components/_front.scss */
+.region-front-content .block {
+  padding: 3rem 0;
+}
+/* line 31, ../sass/components/_front.scss */
+>>>>>>> 336c3af3abd9de5625bc6bbd5d4baf1ab5d5742c
 .region-front-content .block-header {
   text-align: center;
 }
 
+<<<<<<< HEAD
 /* line 53, ../sass/components/_front.scss */
+=======
+/* line 37, ../sass/components/_front.scss */
+>>>>>>> 336c3af3abd9de5625bc6bbd5d4baf1ab5d5742c
 #block-ourgoal {
   background: url(../images/bk_5.jpg);
   background-size: cover;
@@ -1754,7 +1766,11 @@ body.path-frontpage .views_slideshow_cycle_teaser_section {
   background-repeat: no-repeat;
   padding: 1.5rem 0;
 }
+<<<<<<< HEAD
 /* line 60, ../sass/components/_front.scss */
+=======
+/* line 44, ../sass/components/_front.scss */
+>>>>>>> 336c3af3abd9de5625bc6bbd5d4baf1ab5d5742c
 #block-ourgoal .field--name-body {
   font-size: .9125em;
   font-weight: 600;
@@ -1762,11 +1778,19 @@ body.path-frontpage .views_slideshow_cycle_teaser_section {
   text-align: center;
 }
 
+<<<<<<< HEAD
 /* line 69, ../sass/components/_front.scss */
 #block-welcometoclaritycsisclimateservicesinformationsystem {
   background: #fafafa;
 }
 /* line 71, ../sass/components/_front.scss */
+=======
+/* line 53, ../sass/components/_front.scss */
+#block-welcometoclaritycsisclimateservicesinformationsystem {
+  background: #fafafa;
+}
+/* line 55, ../sass/components/_front.scss */
+>>>>>>> 336c3af3abd9de5625bc6bbd5d4baf1ab5d5742c
 #block-welcometoclaritycsisclimateservicesinformationsystem ol {
   margin: 0;
   padding: 0;
@@ -1788,12 +1812,17 @@ body.path-frontpage .views_slideshow_cycle_teaser_section {
   margin: 0;
   list-style-type: none;
 }
+<<<<<<< HEAD
 /* line 82, ../sass/components/_front.scss */
+=======
+/* line 66, ../sass/components/_front.scss */
+>>>>>>> 336c3af3abd9de5625bc6bbd5d4baf1ab5d5742c
 #block-welcometoclaritycsisclimateservicesinformationsystem ol strong {
   display: block;
   margin-bottom: 1.5rem;
 }
 
+<<<<<<< HEAD
 /* line 92, ../sass/components/_front.scss */
 #block-views-block-slideshow-block-1-2 {
   padding: 0;
@@ -1810,10 +1839,28 @@ body.path-frontpage .views_slideshow_cycle_teaser_section {
 }
 /* line 102, ../sass/components/_front.scss */
 #block-views-block-slideshow-block-1-2 img {
+=======
+/* line 77, ../sass/components/_front.scss */
+#block-clarity-views-block-slideshow-block-1 {
+  padding: 0;
+}
+/* line 79, ../sass/components/_front.scss */
+#block-clarity-views-block-slideshow-block-1 .view-content {
+  padding-bottom: 0;
+}
+/* line 82, ../sass/components/_front.scss */
+#block-clarity-views-block-slideshow-block-1 > div {
+  max-width: 100%;
+  width: 100%;
+}
+/* line 86, ../sass/components/_front.scss */
+#block-clarity-views-block-slideshow-block-1 img {
+>>>>>>> 336c3af3abd9de5625bc6bbd5d4baf1ab5d5742c
   width: 100%;
   display: block;
   line-height: 0;
 }
+<<<<<<< HEAD
 /* line 109, ../sass/components/_front.scss */
 #block-views-block-slideshow-block-1-2 .views-row > a {
   display: block;
@@ -1821,6 +1868,15 @@ body.path-frontpage .views_slideshow_cycle_teaser_section {
 }
 /* line 113, ../sass/components/_front.scss */
 #block-views-block-slideshow-block-1-2 .views-row > a:before {
+=======
+/* line 93, ../sass/components/_front.scss */
+#block-clarity-views-block-slideshow-block-1 a {
+  display: block;
+  position: relative;
+}
+/* line 97, ../sass/components/_front.scss */
+#block-clarity-views-block-slideshow-block-1 a:before {
+>>>>>>> 336c3af3abd9de5625bc6bbd5d4baf1ab5d5742c
   position: absolute;
   top: 0;
   left: 0;
@@ -1832,8 +1888,13 @@ body.path-frontpage .views_slideshow_cycle_teaser_section {
   line-height: 0;
   background: linear-gradient(to top, rgba(0, 0, 0, 0.2), transparent);
 }
+<<<<<<< HEAD
 /* line 126, ../sass/components/_front.scss */
 #block-views-block-slideshow-block-1-2 h3 {
+=======
+/* line 110, ../sass/components/_front.scss */
+#block-clarity-views-block-slideshow-block-1 h3 {
+>>>>>>> 336c3af3abd9de5625bc6bbd5d4baf1ab5d5742c
   position: absolute;
   bottom: 3rem;
   left: 20%;
@@ -1843,6 +1904,7 @@ body.path-frontpage .views_slideshow_cycle_teaser_section {
   text-transform: uppercase;
   color: white;
 }
+<<<<<<< HEAD
 /* line 136, ../sass/components/_front.scss */
 #block-views-block-slideshow-block-1-2 .views-slideshow-controls-bottom {
   position: absolute;
@@ -1895,6 +1957,8 @@ body.path-frontpage .views_slideshow_cycle_teaser_section {
 #block-views-block-slideshow-block-1-2 .views-slideshow-controls-bottom .views_slideshow_controls_text_pause a:before {
   content: "\ea16";
 }
+=======
+>>>>>>> 336c3af3abd9de5625bc6bbd5d4baf1ab5d5742c
 
 /* line 1, ../sass/components/_blocks.scss */
 .region-footer {
