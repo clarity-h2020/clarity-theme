@@ -1,0 +1,49 @@
+h1.page-title {
+  
+
+    // text-align:center;
+    // padding:1.5rem 0;
+    // margin-top:0;
+    // margin-bottom:.5rem;
+    
+    
+    a {
+      color:white;
+      border-bottom:1px solid transparentize(white,.7);
+      text-decoration:none;
+      &:hover {
+        border-bottom:2px solid white;
+      }
+    }
+    
+  }
+
+  body.path-group,
+  body.path-gt {
+    h1.page-title {
+      background-image:url(../images/header-trials.jpg);
+    }
+  }
+  
+
+.region-title-heading {
+    background:$bk_4;
+    color:white;
+}
+
+@media(min-width:$device) {
+  .region-title-heading {
+    background-image:url(../images/bk_header_4.jpg);
+    background-position:50% 90%;
+    background-size:cover;
+  }
+  h1.page-title {
+    padding:2vw 0;
+    margin:0 auto;
+    max-width:$device_max;
+    font-size:1.5em;
+    font-weight:600;
+  }
+
+}
+

@@ -163,7 +163,7 @@ body.pdf-print .paragraph .field--label-inline .field__label, body.pdf-print .pa
 body.pdf-print .page img {
   max-width: 100%;
   height: auto;
-  border: 2px solid #325197;
+  border: 2px solid #52abd0;
 }
 /* line 108, ../sass/_pdf_styling.scss */
 body.pdf-print .page td img {

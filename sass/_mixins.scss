@@ -189,3 +189,26 @@ text-indent: 400px;
 
 
 
+@mixin replace-text($fontSize: 12px,$reW: 25px,$reH: 30px)  {
+  display:inline-block;
+  width:$reW;height: $reH;line-height:1em;
+  position:relative;
+  text-indent: 100%;
+  text-indent: -9999px\9; // ie8+ hack
+  white-space: nowrap;
+  overflow: hidden;
+  &:before {
+    opacity:1;
+    text-indent: 0%;
+    position:absolute;
+    top:5px;left:5px;
+    content: "\ea42";
+    display:block;
+    float:left;
+    font-size:$fontSize;
+    width: $reW;
+    height: $reH;
+    padding-top:0px;
+    text-align:center;
+  }
+}
