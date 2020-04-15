@@ -4876,3 +4876,8 @@ form .field-multiple-table .field-multiple-drag .tabledrag-handle {
   margin: 1.5em 0;
   border-radius: 6px;
 }
+
+/* Modal-forms */
+.ui-dialog.report-image-edit-form {
+	z-index: 1000 !important;
+}
