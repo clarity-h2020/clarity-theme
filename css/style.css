@@ -4917,3 +4917,9 @@ form .field-multiple-table .field-multiple-drag .tabledrag-handle {
   font: 26px/14px Tahoma,Verdana,sans-serif;
   font-weight: bold;
 }
+
+/* Modal-forms */
+/* line 2, ../sass/components/_modals.scss */
+.ui-dialog.report-image-edit-form {
+  z-index: 1000 !important;
+}
