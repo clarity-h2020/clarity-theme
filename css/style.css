@@ -4877,7 +4877,43 @@ form .field-multiple-table .field-multiple-drag .tabledrag-handle {
   border-radius: 6px;
 }
 
-/* Modal-forms */
-.ui-dialog.report-image-edit-form {
-	z-index: 1000 !important;
+/* line 1, ../sass/components/_leaflet_maps.scss */
+.leaflet-popup-content-wrapper {
+  width: 650px;
+  max-height: 350px;
+  overflow: scroll;
+  border-top: 8px white solid;
+}
+/* line 7, ../sass/components/_leaflet_maps.scss */
+.leaflet-popup-content-wrapper::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width: 18px;
+  height: 12px;
+}
+/* line 13, ../sass/components/_leaflet_maps.scss */
+.leaflet-popup-content-wrapper::-webkit-scrollbar-corner {
+  background: transparent;
+}
+/* line 17, ../sass/components/_leaflet_maps.scss */
+.leaflet-popup-content-wrapper::-webkit-scrollbar-thumb {
+  background: #52abd0;
+  border: 6px solid transparent;
+  border-radius: 9px;
+  background-clip: content-box;
+}
+/* line 24, ../sass/components/_leaflet_maps.scss */
+.leaflet-popup-content-wrapper::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+/* line 28, ../sass/components/_leaflet_maps.scss */
+.leaflet-popup-content-wrapper::-webkit-scrollbar-thumb:hover {
+  background: #005a75;
+}
+
+/* line 33, ../sass/components/_leaflet_maps.scss */
+.leaflet-container a.leaflet-popup-close-button {
+  right: 20px;
+  padding: 8px 8px 0 0;
+  font: 26px/14px Tahoma,Verdana,sans-serif;
+  font-weight: bold;
 }

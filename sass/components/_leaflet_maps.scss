@@ -1,0 +1,39 @@
+.leaflet-popup-content-wrapper {
+  width: 650px;
+  max-height: 350px;
+  overflow: scroll;
+  border-top: 8px white solid;
+
+  &::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width: 18px;
+  height: 12px;
+  }
+
+  &::-webkit-scrollbar-corner {
+    background: transparent
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: $bk_1;
+    border: 6px solid transparent;
+    border-radius: 9px;
+    background-clip: content-box;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+
+  &::-webkit-scrollbar-thumb:hover {
+    background: $bk_1_3;
+  }
+}
+
+.leaflet-container a.leaflet-popup-close-button {
+  right: 20px;
+  padding: 8px 8px 0 0;
+  font: 26px/14px Tahoma,Verdana,sans-serif;
+  font-weight: bold;
+}
+
